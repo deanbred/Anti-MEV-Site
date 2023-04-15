@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "KAKE";
+  src: url("../public/fonts/kake.otf");
+}
