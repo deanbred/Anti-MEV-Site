@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/clock.png" />
       </Head>
       <Header />
-      <div className="bg-cover bg-no-repeat bg-[url('../public/erica.jpeg')]">
+      <div className="bg-cover bg-no-repeat bg-[url('../public/bg.jpeg')]">
         <ContractCalls />
         <main className={styles.main}>
           <div className="">
