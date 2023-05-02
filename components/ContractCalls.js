@@ -3,7 +3,7 @@ import { useMoralis, useWeb3Contract } from "react-moralis"
 import { useEffect, useState } from "react"
 import { useNotification } from "web3uikit"
 import { ethers } from "ethers"
-import { Network, Alchemy } from "alchemy-sdk"
+//import { Network, Alchemy } from "alchemy-sdk"
 
 /* const settings = {
     apiKey: "4RrfCsQcUb2J3em8Ql1w7R5Es-cfZAJp",
@@ -11,7 +11,9 @@ import { Network, Alchemy } from "alchemy-sdk"
 };
 
 const alchemy = new Alchemy(settings);
-
+    
+const latestBlock = await alchemy.core.getBlockNumber()
+console.log("The latest block number is", latestBlock)
 // Get all outbound transfers for a provided address
 alchemy.core
     .getTokenBalances('0x994b342dd87fc825f66e51ffa3ef71ad818b6893')
@@ -29,15 +31,8 @@ alchemy.ws.on(
 export default function ContractCalls() {
   const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis()
   const chainId = parseInt(chainIdHex)
-  const raffleAddress = 0xdc64a140aa3e981100a9beca4e685f962f0cf6c9
-
-  const settings = {
-    apiKey: "4RrfCsQcUb2J3em8Ql1w7R5Es-cfZAJp",
-    network: Network.ETH_SEPOLIA,
-  }
-
-  const alchemy = new Alchemy(settings)
-
+  const raffleAddress = "0x13901263A85505f3FdBA84aa5f06825993d65880"
+  
   //chainId in contractAddresses ? contractAddresses[chainId][0] : null
 
   // State hooks
@@ -92,23 +87,20 @@ export default function ContractCalls() {
   })
 
   async function updateUIValues() {
-    const latestBlock = await alchemy.core.getBlockNumber()
-    console.log("The latest block number is", latestBlock)
-
     // Another way we could make a contract call:
     // const options = { abi, contractAddress: raffleAddress }
     // const fee = await Moralis.executeFunction({
     //     functionName: "getEntranceFee",
     //     ...options,
     // })
-    //const entranceFeeFromCall = (await getEntranceFee()).toString()
-    //const numPlayersFromCall = (await getPlayersNumber()).toString()
-    //const recentWinnerFromCall = await getRecentWinner()
-    //const raffleStateFromCall = await getRaffleState()
-    //setEntranceFee(entranceFeeFromCall)
-    //setNumberOfPlayers(numPlayersFromCall)
-    //setRecentWinner(recentWinnerFromCall)
-    //setRaffleState(raffleStateFromCall)
+    const entranceFeeFromCall = (await getEntranceFee()).toString()
+    const numPlayersFromCall = (await getPlayersNumber()).toString()
+    const recentWinnerFromCall = await getRecentWinner()
+    const raffleStateFromCall = await getRaffleState()
+    setEntranceFee(entranceFeeFromCall)
+    setNumberOfPlayers(numPlayersFromCall)
+    setRecentWinner(recentWinnerFromCall)
+    setRaffleState(raffleStateFromCall)
   }
 
   useEffect(() => {
@@ -137,14 +129,14 @@ export default function ContractCalls() {
   }
 
   return (
-    <div className="p-4 sm:text-sm">
+    <div className="p-6 sm:text-sm">
       <div className="float-left">
         <button
           className="bg-[#0c948a] hover:bg-[#b64267] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
           onClick={async () => window.open("https://app.uniswap.org/")}
           disabled={isLoading || isFetching}
         >
-          Ape on Uniswap
+          Buy on Uniswap
         </button>
         <div className="px-2 py-1 text-slate-100">
           Trading at: {ethers.utils.formatUnits(entranceFee, "ether")} USD
@@ -175,18 +167,20 @@ export default function ContractCalls() {
             </div>
             <div className="px-2 text-slate-100">
               VRF Jackpot: {recentWinner}
-            </div>
-            {/*             <div className="py-1 px-2 text-slate-100">
+            </div>            
+            <div className="py-1 px-2 text-slate-100">
               Raffle State: {raffleState}
             </div>
             <div className="py-1 px-2 text-slate-100">
-              Recent Chad: {recentWinner}
-            </div> */}
+              Entrance Fee: {entranceFee}
+            </div>
+
           </div>
           {/* <div className="px-2 text-slate-100">Latest Block: {latestBlock}</div> */}
         </>
       ) : (
-        <div>Please connect to a supported chain </div>
-      )}    </div>
+        <div></div>
+      )}{" "}
+    </div>
   )
 }

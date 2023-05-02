@@ -13,7 +13,7 @@ export default function Home() {
         <title>$GMUSSY Token</title>
         <meta name="description" content="Crypto Token Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/clock.png" />
+        <link rel="icon" href="/coin.png" />
       </Head>
       <Header />
       <div className="bg-cover bg-no-repeat bg-[url('../public/bg.jpeg')]">
@@ -21,17 +21,12 @@ export default function Home() {
         <main className={styles.main}>
           <div className="">
             <SocialIcon
-              url="https://t.me/GMUSSY"
-              network="telegram"
-              fgColor="white"
-            />
-            <SocialIcon
               url="https://twitter.com/GMUSSY_TOKEN"
               network="twitter"
               fgColor="white"
             />
             <SocialIcon
-              url="https://www.discord.com/"
+              url="https://discord.com/channels/1102425455602171924/1102425458106183732"
               network="discord"
               fgColor="white"
             />
@@ -40,10 +35,15 @@ export default function Home() {
               network="tiktok"
               fgColor="white"
             />
+            <SocialIcon
+              url="https://t.me/GMUSSY"
+              network="telegram"
+              fgColor="white"
+            />
           </div>
         </main>
       </div>
-      <footer className="text-xs">DEV is BASED</footer>
+      <footer className="text-[7px]">dev actually based</footer>
     </>
   )
 }
