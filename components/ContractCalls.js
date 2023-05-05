@@ -101,14 +101,14 @@ export default function ContractCalls() {
     //     functionName: "getEntranceFee",
     //     ...options,
     // })
-    const entranceFeeFromCall = (await getEntranceFee()).toString()
+/*     const entranceFeeFromCall = (await getEntranceFee()).toString()
     const numPlayersFromCall = (await getPlayersNumber()).toString()
     const recentWinnerFromCall = await getRecentWinner()
     const raffleStateFromCall = await getRaffleState()
     setEntranceFee(entranceFeeFromCall)
     setNumberOfPlayers(numPlayersFromCall)
     setRecentWinner(recentWinnerFromCall)
-    setRaffleState(raffleStateFromCall)
+    setRaffleState(raffleStateFromCall) */
   }
 
   useEffect(() => {
@@ -146,10 +146,6 @@ export default function ContractCalls() {
         >
           Buy on Uniswap
         </button>
-        <div className="px-2 py-1 text-slate-100">
-          Trading at: {ethers.utils.formatUnits(entranceFee, "ether")} USD
-        </div>
-        <div className="px-2 text-slate-100">Holders: {0}</div>
       </div>
       {raffleAddress ? (
         <>

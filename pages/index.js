@@ -26,17 +26,12 @@ export default function Home() {
               fgColor="white"
             />
             <SocialIcon
-              url="https://discord.com/channels/1102425455602171924/1102425458106183732"
-              network="discord"
-              fgColor="white"
-            />
-            <SocialIcon
               url="https://www.tiktok.com/@gmussy_token"
               network="tiktok"
               fgColor="white"
             />
             <SocialIcon
-              url="https://t.me/GMUSSY"
+              url="https://t.me/GMUSSYerc20"
               network="telegram"
               fgColor="white"
             />
