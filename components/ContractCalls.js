@@ -1,4 +1,4 @@
-import { contractAddresses, abi } from "../constants"
+import { contractAddresses, abi, abiToken } from "../constants"
 import { useMoralis, useWeb3Contract } from "react-moralis"
 import { useEffect, useState } from "react"
 import { useNotification } from "web3uikit"
@@ -31,8 +31,9 @@ alchemy.ws.on(
 export default function ContractCalls() {
   const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis()
   const chainId = parseInt(chainIdHex)
-  const raffleAddress = "0x13901263A85505f3FdBA84aa5f06825993d65880"
-  
+  const raffleAddress = ""
+  const tokenAddress = "0xc65260c36415dDc3f5b44E55939B343Da89C5D07"
+
   //chainId in contractAddresses ? contractAddresses[chainId][0] : null
 
   // State hooks
@@ -58,6 +59,13 @@ export default function ContractCalls() {
   })
 
   /* View Functions */
+  const { runContractFunction: balanceOf } = useWeb3Contract({
+    abi: abiToken,
+    contractAddress: tokenAddress,
+    functionName: "balanceOf",
+    params: {},
+  })
+
   const { runContractFunction: getEntranceFee } = useWeb3Contract({
     abi: abi,
     contractAddress: raffleAddress,
@@ -167,14 +175,13 @@ export default function ContractCalls() {
             </div>
             <div className="px-2 text-slate-100">
               VRF Jackpot: {recentWinner}
-            </div>            
+            </div>
             <div className="py-1 px-2 text-slate-100">
               Raffle State: {raffleState}
             </div>
             <div className="py-1 px-2 text-slate-100">
-              Entrance Fee: {entranceFee}
+              Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
             </div>
-
           </div>
           {/* <div className="px-2 text-slate-100">Latest Block: {latestBlock}</div> */}
         </>
