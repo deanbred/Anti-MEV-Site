@@ -4,4 +4,10 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/gmussyco/public_html/
-    - /bin/cp -R out $DEPLOYPATH
+    - /bin/cp -R out/_next $DEPLOYPATH
+    - /bin/cp -R out/fonts $DEPLOYPATH
+    - /bin/cp -R out/index.html $DEPLOYPATH
+    - /bin/cp -R out/bg.jpeg $DEPLOYPATH
+    - /bin/cp -R out/coin.png $DEPLOYPATH
+    - /bin/cp -R out/404.html $DEPLOYPATH
+    
