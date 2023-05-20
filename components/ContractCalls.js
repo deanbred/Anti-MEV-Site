@@ -140,7 +140,7 @@ export default function ContractCalls() {
     <div className="p-6 sm:text-sm">
       <div className="float-left">
         <button
-          className="bg-[#0c948a] hover:bg-[#b64267] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
+          className="bg-[#2d3424] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
           onClick={async () => window.open("https://app.uniswap.org/")}
           disabled={isLoading || isFetching}
         >

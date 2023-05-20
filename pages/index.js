@@ -10,29 +10,25 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>$GMUSSY Token</title>
+        <title>Anti-MEV Token</title>
         <meta name="description" content="Crypto Token Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/coin.png" />
       </Head>
       <Header />
-      <div className="bg-cover bg-no-repeat bg-[url('../public/bg.jpeg')]">
+      <div className="bg-cover bg-no-repeat bg-[url('../public/bot-bg.jpeg')]">
         <ContractCalls />
         <main className={styles.main}>
           <div className="">
+            <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
             <SocialIcon
-              url="https://twitter.com/GMUSSY_TOKEN"
+              url="https://twitter.com"
               network="twitter"
               fgColor="white"
             />
             <SocialIcon
-              url="https://www.tiktok.com/@gmussy_token"
-              network="tiktok"
-              fgColor="white"
-            />
-            <SocialIcon
-              url="https://t.me/GMUSSYerc20"
-              network="telegram"
+              url="https://www.discord.com"
+              network="discord"
               fgColor="white"
             />
           </div>

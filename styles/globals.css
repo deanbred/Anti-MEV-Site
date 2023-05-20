@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "KAKE";
+  font-family: "kake";
   src: url("../public/fonts/coffee.ttf");
 }
