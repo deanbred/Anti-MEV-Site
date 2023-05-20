@@ -4,8 +4,6 @@ deployment:
     - export DEPLOYPATH=/home2/gmussyco/public_html/anti-mev
     - /bin/cp -R out/_next $DEPLOYPATH
     - /bin/cp -R out/fonts $DEPLOYPATH
-    - /bin/cp -R out/index.html $DEPLOYPATH
-    - /bin/cp -R out/bot-bg.jpeg $DEPLOYPATH
-    - /bin/cp -R out/coin.png $DEPLOYPATH
-    - /bin/cp -R out/404.html $DEPLOYPATH
+    - /bin/cp out/index.html $DEPLOYPATH
+    - /bin/cp out/bot-bg.jpeg $DEPLOYPATH
 
