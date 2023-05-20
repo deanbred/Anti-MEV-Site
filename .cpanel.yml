@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/gmussyco/public_html/
+    - export DEPLOYPATH=/home2/gmussyco/public_html/anti-mev
     - /bin/cp -R out/_next $DEPLOYPATH
     - /bin/cp -R out/fonts $DEPLOYPATH
     - /bin/cp -R out/index.html $DEPLOYPATH
