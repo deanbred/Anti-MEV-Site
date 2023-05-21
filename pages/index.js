@@ -30,7 +30,10 @@ export default function Home() {
                     fill="none"
                   />
                 </svg>
-                <p className="ml-4">Defeats sandwich attacks</p>
+                <p className="ml-4">
+                  Defeats sandwich attacks with a multi-block delay between buy
+                  and sell
+                </p>
               </li>
               <li className="flex items-center">
                 <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-900 stroke-2">
