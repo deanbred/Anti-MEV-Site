@@ -13,12 +13,47 @@ export default function Home() {
         <title>Anti-MEV Token</title>
         <meta name="description" content="Crypto Token Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/coin.png" />
+        <link rel="icon" href="/bg-07.jpeg" />
       </Head>
       <Header />
-      <div className="bg-cover bg-no-repeat bg-[url('../public/bot-bg.jpeg')]">
+      <div className="bg-center bg-cover bg-no-repeat bg-[url('../public/bg-01.jpeg')]">
         <ContractCalls />
         <main className={styles.main}>
+          <div className="space-y-4 text-gray-600">
+            <p>Designed to combat Miner Extractable Value:</p>
+            <ul className="space-y-4">
+              <li className="flex items-center">
+                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-900 stroke-2">
+                  <circle cx="12" cy="12" r="11" />
+                  <path
+                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                    fill="none"
+                  />
+                </svg>
+                <p className="ml-4">Defeats sandwich attacks</p>
+              </li>
+              <li className="flex items-center">
+                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-900 stroke-2">
+                  <circle cx="12" cy="12" r="11" />
+                  <path
+                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                    fill="none"
+                  />
+                </svg>
+                <p className="ml-4">Max Wallet is 1% of supply</p>
+              </li>
+              <li className="flex items-center">
+                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-900 stroke-2">
+                  <circle cx="12" cy="12" r="11" />
+                  <path
+                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                    fill="none"
+                  />
+                </svg>
+                <p className="ml-4">Curated list of known bots</p>
+              </li>
+            </ul>
+          </div>
           <div className="">
             <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
             <SocialIcon

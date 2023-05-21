@@ -139,13 +139,12 @@ export default function ContractCalls() {
   return (
     <div className="p-6 sm:text-sm">
       <div className="float-left">
-        <button
-          className="bg-[#2d3424] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
-          onClick={async () => window.open("https://app.uniswap.org/")}
-          disabled={isLoading || isFetching}
-        >
-          Buy on Uniswap
-        </button>
+      <button
+        className="bg-[#a43d2b] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
+        onClick={async () => window.open("https://app.uniswap.org/")}
+      >
+        Buy on Uniswap
+      </button>
       </div>
       {raffleAddress ? (
         <>
