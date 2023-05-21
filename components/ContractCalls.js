@@ -3,30 +3,8 @@ import { useMoralis, useWeb3Contract } from "react-moralis"
 import { useEffect, useState } from "react"
 import { useNotification } from "web3uikit"
 import { ethers } from "ethers"
-//import { Network, Alchemy } from "alchemy-sdk"
 
-/* const settings = {
-    apiKey: "4RrfCsQcUb2J3em8Ql1w7R5Es-cfZAJp",
-    network: Network.ETH_SEPOLIA,
-};
-
-const alchemy = new Alchemy(settings);
-    
-const latestBlock = await alchemy.core.getBlockNumber()
-console.log("The latest block number is", latestBlock)
-// Get all outbound transfers for a provided address
-alchemy.core
-    .getTokenBalances('0x994b342dd87fc825f66e51ffa3ef71ad818b6893')
-    .then(console.log);
-
-// Get all the NFTs owned by an address
-const nfts = alchemy.nft.getNftsForOwner("0xshah.eth");
-
-// Listen to all new pending transactions
-alchemy.ws.on(
-    { method: "alchemy_pendingTransactions",
-    fromAddress: "0xshah.eth" },
-    (res) => console.log(res) */
+let raffleString = ""
 
 export default function ContractCalls() {
   const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis()
@@ -42,6 +20,7 @@ export default function ContractCalls() {
   const [numberOfPlayers, setNumberOfPlayers] = useState("0")
   const [recentWinner, setRecentWinner] = useState("0")
   const [raffleState, setRaffleState] = useState("0")
+  const [jackpot, setJackpot] = useState("0")
 
   const dispatch = useNotification()
 
@@ -94,6 +73,13 @@ export default function ContractCalls() {
     params: {},
   })
 
+  const { runContractFunction: getJackpot } = useWeb3Contract({
+    abi: abi,
+    contractAddress: raffleAddress,
+    functionName: "getJackpot",
+    params: {},
+  })
+
   async function updateUIValues() {
     // Another way we could make a contract call:
     // const options = { abi, contractAddress: raffleAddress }
@@ -105,10 +91,18 @@ export default function ContractCalls() {
     const numPlayersFromCall = (await getPlayersNumber()).toString()
     const recentWinnerFromCall = await getRecentWinner()
     const raffleStateFromCall = await getRaffleState()
+    if (raffleStateFromCall == 0) {
+      raffleString = "Open"
+    } else if (raffleStateFromCall == 1) {
+      raffleString = "Closed"
+    }
+    //const jackpotFromCall = (await getJackpot()).toString()
+    setRaffleState(raffleStateFromCall)
     setEntranceFee(entranceFeeFromCall)
     setNumberOfPlayers(numPlayersFromCall)
     setRecentWinner(recentWinnerFromCall)
     setRaffleState(raffleStateFromCall)
+    //setJackpot(jackpotFromCall)
   }
 
   useEffect(() => {
@@ -165,22 +159,22 @@ export default function ContractCalls() {
                 "Enter Lottery"
               )}
             </button>
-            <div className="px-2 py-1 text-slate-100">
+            <div className="px-2 py-1 text-slate-800">
               Total Players: {numberOfPlayers}
             </div>
-            <div className="px-2 text-slate-100">
-              VRF Jackpot: {recentWinner}
+            <div className="px-2 text-slate-800">
+              {/* VRF Jackpot: {jackpotFromCall} */}
             </div>
-            <div className="py-1 px-2 text-slate-100">
-              Raffle State: {raffleState}
+            <div className="py-1 px-2 text-slate-800">
+              Current State: {raffleString}
             </div>
-            <div className="py-1 px-2 text-slate-100">
+            <div className="py-1 px-2 text-slate-800">
               Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
             </div>
           </div>
         </>
       ) : (
-        <div></div>
+        <div>Please connect to a supported chain </div>
       )}{" "}
     </div>
   )
