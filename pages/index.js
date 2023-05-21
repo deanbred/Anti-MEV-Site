@@ -13,7 +13,7 @@ export default function Home() {
         <title>Anti-MEV Token</title>
         <meta name="description" content="Crypto Token Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/bg-07.jpeg" />
+        <link rel="icon" href="/logo-01.png" />
       </Head>
       <Header />
       <div className="bg-center bg-cover bg-no-repeat bg-[url('../public/bg-01.jpeg')]">

@@ -31,7 +31,7 @@ alchemy.ws.on(
 export default function ContractCalls() {
   const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis()
   const chainId = parseInt(chainIdHex)
-  const raffleAddress = ""
+  const raffleAddress = "0x13901263A85505f3FdBA84aa5f06825993d65880"
   const tokenAddress = "0xc65260c36415dDc3f5b44E55939B343Da89C5D07"
 
   //chainId in contractAddresses ? contractAddresses[chainId][0] : null
@@ -101,14 +101,14 @@ export default function ContractCalls() {
     //     functionName: "getEntranceFee",
     //     ...options,
     // })
-/*     const entranceFeeFromCall = (await getEntranceFee()).toString()
+    const entranceFeeFromCall = (await getEntranceFee()).toString()
     const numPlayersFromCall = (await getPlayersNumber()).toString()
     const recentWinnerFromCall = await getRecentWinner()
     const raffleStateFromCall = await getRaffleState()
     setEntranceFee(entranceFeeFromCall)
     setNumberOfPlayers(numPlayersFromCall)
     setRecentWinner(recentWinnerFromCall)
-    setRaffleState(raffleStateFromCall) */
+    setRaffleState(raffleStateFromCall)
   }
 
   useEffect(() => {
@@ -139,18 +139,18 @@ export default function ContractCalls() {
   return (
     <div className="p-6 sm:text-sm">
       <div className="float-left">
-      <button
-        className="bg-[#a43d2b] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
-        onClick={async () => window.open("https://app.uniswap.org/")}
-      >
-        Buy on Uniswap
-      </button>
+        <button
+          className="bg-[#a43d2b] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
+          onClick={async () => window.open("https://app.uniswap.org/")}
+        >
+          Buy on Uniswap
+        </button>
       </div>
       {raffleAddress ? (
         <>
           <div className="float-right">
             <button
-              className=" bg-[#0c948a] hover:bg-[#b64267] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
+              className="bg-[#a43d2b] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
               onClick={async () =>
                 await enterRaffle({
                   onSuccess: handleSuccess,
@@ -178,7 +178,6 @@ export default function ContractCalls() {
               Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
             </div>
           </div>
-          {/* <div className="px-2 text-slate-100">Latest Block: {latestBlock}</div> */}
         </>
       ) : (
         <div></div>
