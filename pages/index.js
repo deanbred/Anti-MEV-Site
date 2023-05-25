@@ -18,7 +18,7 @@ export default function Home() {
       <Header />
       <div className="bg-center bg-cover bg-no-repeat bg-[url('../public/bg-01.jpeg')]">
         <ContractCalls />
-        {/* <main className={styles.main}> */}
+        <main className={styles.main}>
           <div className="space-y-4 text-gray-600">
             <p>Designed to combat Miner Extractable Value:</p>
             <ul className="space-y-4">
@@ -31,7 +31,8 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-4">
-                  Defeats sandwich attacks using multi-block delay between transfers
+                  Defeats sandwich attacks using multi-block delay between
+                  transfers
                 </p>
               </li>
               <li className="flex items-center">
@@ -42,7 +43,9 @@ export default function Home() {
                     fill="none"
                   />
                 </svg>
-                <p className="ml-4">Enforces a Max Wallet size of 1% of token supply</p>
+                <p className="ml-4">
+                  Enforces a Max Wallet size of 1% of token supply
+                </p>
               </li>
               <li className="flex items-center">
                 <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-900 stroke-2">
@@ -52,7 +55,9 @@ export default function Home() {
                     fill="none"
                   />
                 </svg>
-                <p className="ml-4">Excludes a large curated list of known bots</p>
+                <p className="ml-4">
+                  Excludes a large curated list of known bots
+                </p>
               </li>
             </ul>
           </div>
@@ -69,7 +74,7 @@ export default function Home() {
               fgColor="white"
             />
           </div>
-        {/* </main> */}
+        </main>
       </div>
       <footer className="text-[7px]">dev actually based</footer>
     </>
