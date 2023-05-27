@@ -17,9 +17,19 @@ export default function Home() {
       </Head>
       <Header />
       <div className="bg-center bg-cover bg-no-repeat bg-[url('../public/bg-01.jpeg')]">
-        <ContractCalls />
         <main className={styles.main}>
-          <div className="space-y-4 text-gray-600">
+          <div className="">
+            <button
+              className="bg-[#a43d2b] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
+              onClick={async () => window.open("https://app.uniswap.org/")}
+            >
+              Buy on Uniswap
+            </button>
+          </div>
+          <div className="">
+            <ContractCalls />
+          </div>
+          <div className="space-y-4 text-slate-900">
             <p>Designed to combat Miner Extractable Value:</p>
             <ul className="space-y-4">
               <li className="flex items-center">

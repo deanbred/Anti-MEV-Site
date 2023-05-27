@@ -1,5 +1,5 @@
 import { contractAddresses, abi, abiToken } from "../constants"
-import { useMoralis, useWeb3Contract, useChain } from "react-moralis"
+import { useMoralis, useWeb3Contract } from "react-moralis"
 import { useEffect, useState } from "react"
 import { useNotification } from "web3uikit"
 import { ethers } from "ethers"
@@ -7,14 +7,14 @@ import { ethers } from "ethers"
 let raffleString, jackpotString, id
 
 export default function ContractCalls() {
-  const { Moralis, isWeb3Enabled, chainId, account } = useMoralis() 
-  id = parseInt(chainId) 
+  const { Moralis, isWeb3Enabled, chainId, account } = useMoralis()
+  id = parseInt(chainId)
   console.log(`chain is ${id}`)
   console.log(`account is ${account}`)
 
-  const raffleAddress = id in contractAddresses ? contractAddresses[id][0] : null
- // const raffleAddress = "0x13901263A85505f3FdBA84aa5f06825993d65880"
-  const tokenAddress = "0xc65260c36415dDc3f5b44E55939B343Da89C5D07"
+  const raffleAddress =
+    id in contractAddresses ? contractAddresses[id][0] : null
+  const tokenAddress = "0x80faA8b68d135C313f6D778138c4f32f4A6ef962"
 
   // State hooks
   const [entranceFee, setEntranceFee] = useState("0")
@@ -128,20 +128,12 @@ export default function ContractCalls() {
   }
 
   return (
-    <div className="p-6 sm:text-sm">
-      <div className="float-left">
-        <button
-          className="bg-[#a43d2b] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
-          onClick={async () => window.open("https://app.uniswap.org/")}
-        >
-          Buy on Uniswap
-        </button>
-      </div>
+    <div className="">
       {raffleAddress ? (
         <>
-          <div className="float-right">
+          <div className="">
             <button
-              className="bg-[#a43d2b] hover:bg-[#cb4006] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
+              className="bg-[#a43d2b] hover:bg-[#782a09] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
               onClick={async () =>
                 await enterRaffle({
                   onSuccess: handleSuccess,
@@ -156,23 +148,23 @@ export default function ContractCalls() {
                 "Enter Lottery"
               )}
             </button>
-            <div className="px-2 py-1 font-semibold text-slate-800">
+            <div className="font-semibold text-slate-900">
               Total Players: {numberOfPlayers}
             </div>
-            <div className="px-2 font-bold text-slate-800">
+            <div className="font-semibold text-slate-900">
               VRF Jackpot: {jackpotString} ETH
             </div>
-            <div className="py-1 px-2 font-semibold text-slate-800">
+            <div className="font-semibold text-slate-900">
               Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
             </div>
-            <div className="py-1 px-2 font-semibold text-slate-800">
+            <div className="font-semibold text-slate-900">
               Current State: {raffleString}
             </div>
           </div>
         </>
       ) : (
-        <div className="float-right px-2 py-1 font-semibold text-slate-800">
-          Please connect to Ethereum Mainnet{" "}
+        <div className="font-semibold text-slate-900">
+          Connect to Ethereum Mainnet
         </div>
       )}{" "}
     </div>
