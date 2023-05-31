@@ -150,7 +150,7 @@ export default function ContractCalls() {
                 "Enter Lottery"
               )}
             </button>
-            <div className="bg-[#decb9f] opacity-90 rounded-lg p-2">
+            <div className="bg-[#decb9f] rounded-lg mr-2 p-2">
               <div>Total Players: {numberOfPlayers}</div>
               <div>VRF Jackpot: {jackpotString} ETH</div>
               <div>

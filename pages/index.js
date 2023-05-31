@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/logo-01.png" />
       </Head>
       <Header />
-      <div className="flex min-h-screen flex-col overflow-hidden bg-center bg-cover bg-no-repeat bg-[url('../public/bg-01.jpeg')]">
+      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-[url('../public/bg-01.jpeg')]">
         <div className="p-3">
           <button
             className="bg-[#a72008] hover:bg-[#a43d2b] text-slate-200 hover:text-white font-bold py-2 px-3 rounded ml-auto"
@@ -25,7 +25,15 @@ export default function Home() {
             Buy on Uniswap
           </button>
           <ContractCalls className="" />
-        </div>        
+        </div>
+        <div className="ml-auto px-6">
+          <Image
+            src="chainlink_badge.jpeg"
+            width={200}
+            height={64}
+            alt="Logo"
+          ></Image>
+        </div>
 
         <div className="p-3 flex flex-col space-y-2 ml-auto">
           <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
@@ -42,8 +50,14 @@ export default function Home() {
         </div>
 
         <div className="bg-[#decb9f] opacity-90 absolute bottom-4 left-1/4 pt-2 max-w-fit rounded-lg px-8 space-y-4 text-slate-900">
-          <p>Malicious bots steal millions from crypto users by reordering transactions in a block.</p>
-          <p>Our code was developed specifically to fight back against this MEV Mafia!</p>
+          <p>
+            Malicious bots steal millions from crypto users by reordering
+            transactions in a block.
+          </p>
+          <p>
+            Our code was developed specifically to fight back against this MEV
+            Mafia!
+          </p>
           <ul className="space-y-4">
             <li className="flex items-center hover:stroke-sky-600">
               <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
@@ -84,18 +98,17 @@ export default function Home() {
             </li>
           </ul>
           <div className="text-base font-semibold leading-7">
-          <p className="text-gray-900">Want to dig deeper into Anti-MEV?</p>
-          <p>
-            <a
-              href="https://github.com/deanbred/Anti-MEV-Token.git"
-              className="text-sky-800 hover:text-sky-600"
-            >
-              Read the code &rarr;
-            </a>
-          </p>
+            <p className="text-gray-900">Want to dig deeper into Anti-MEV?</p>
+            <p>
+              <a
+                href="https://github.com/deanbred/Anti-MEV-Token.git"
+                className="text-sky-800 hover:text-sky-600"
+              >
+                Read the code &rarr;
+              </a>
+            </p>
+          </div>
         </div>
-        </div>
-
       </div>
 
       <footer className="text-[7px]">dev actually based</footer>
