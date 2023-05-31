@@ -38,18 +38,18 @@ export default function Home() {
         <div className="p-3 flex flex-col space-y-2 ml-auto">
           <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
           <SocialIcon
-            url="https://twitter.com"
+            url="https://twitter.com/Anti_MEV"
             network="twitter"
             fgColor="white"
           />
           <SocialIcon
-            url="https://www.discord.com"
+            url="https://discord.gg/nab3H9cyZQ"
             network="discord"
             fgColor="white"
           />
         </div>
 
-        <div className="bg-[#decb9f] opacity-90 absolute bottom-4 left-1/4 pt-2 max-w-fit rounded-lg px-8 space-y-4 text-slate-900">
+        <div className="bg-[#decb9f] absolute bottom-4 left-1/4 pt-2 max-w-fit rounded-lg px-8 space-y-4 text-slate-900">
           <p>
             Malicious bots steal millions from crypto users by reordering
             transactions in a block.
