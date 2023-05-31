@@ -25,7 +25,7 @@ export default function Home() {
             Buy on Uniswap
           </button>
           <ContractCalls className="" />
-        </div>
+        </div>        
 
         <div className="p-3 flex flex-col space-y-2 ml-auto">
           <SocialIcon url="https://t.me" network="telegram" fgColor="white" />

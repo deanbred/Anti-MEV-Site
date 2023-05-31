@@ -14,7 +14,9 @@ export default function ContractCalls() {
 
   const raffleAddress =
     id in contractAddresses ? contractAddresses[id][0] : null
-  const tokenAddress = "0x80faA8b68d135C313f6D778138c4f32f4A6ef962"
+  console.log(`raffle address is ${raffleAddress}`)
+
+  const tokenAddress = "0x8b88f72997f10c26CdeB500Fc6612C570a6a0A31"
 
   // State hooks
   const [entranceFee, setEntranceFee] = useState("0")
@@ -103,7 +105,7 @@ export default function ContractCalls() {
   }
 
   useEffect(() => {
-    if (isWeb3Enabled && id == 5) {
+    if (isWeb3Enabled) {
       updateUIValues()
     }
   }, [isWeb3Enabled])
