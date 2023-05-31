@@ -128,12 +128,12 @@ export default function ContractCalls() {
   }
 
   return (
-    <div className="">
+    <div className="float-right font-semibold text-slate-900">
       {raffleAddress ? (
         <>
           <div className="">
             <button
-              className="bg-[#a43d2b] hover:bg-[#782a09] text-slate-200 hover:text-slate-100 font-bold py-2 px-3 rounded ml-auto"
+              className="bg-[#a72008] hover:bg-[#a43d2b] text-slate-200 hover:text-white font-bold py-2 px-3 rounded"
               onClick={async () =>
                 await enterRaffle({
                   onSuccess: handleSuccess,
@@ -148,24 +148,19 @@ export default function ContractCalls() {
                 "Enter Lottery"
               )}
             </button>
-            <div className="font-semibold text-slate-900">
-              Total Players: {numberOfPlayers}
-            </div>
-            <div className="font-semibold text-slate-900">
-              VRF Jackpot: {jackpotString} ETH
-            </div>
-            <div className="font-semibold text-slate-900">
-              Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
-            </div>
-            <div className="font-semibold text-slate-900">
-              Current State: {raffleString}
+            <div className="bg-[#decb9f] opacity-90 rounded-lg p-2">
+              <div>Total Players: {numberOfPlayers}</div>
+              <div>VRF Jackpot: {jackpotString} ETH</div>
+              <div>
+                Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")}{" "}
+                ETH
+              </div>
+              <div>Current State: {raffleString}</div>
             </div>
           </div>
         </>
       ) : (
-        <div className="font-semibold text-slate-900">
-          Connect to Ethereum Mainnet
-        </div>
+        <div>Connect to Ethereum Mainnet</div>
       )}{" "}
     </div>
   )
