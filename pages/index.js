@@ -26,7 +26,7 @@ export default function Home() {
           </button>
           <ContractCalls className="" />
         </div>
-        <div className="ml-auto px-6">
+        <div className="ml-auto px-3">
           <Image
             src="chainlink_badge.jpeg"
             width={200}
