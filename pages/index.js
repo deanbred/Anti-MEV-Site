@@ -13,20 +13,20 @@ export default function Home() {
         <title>Anti-MEV Token</title>
         <meta name="description" content="Crypto Token Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo-01.png" />
+        <link rel="icon" href="/logo-00.jpg" />
       </Head>
       <Header />
       <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-[url('../public/bg-01.jpeg')]">
         <div className="p-3">
           <button
-            className="bg-[#a72008] hover:bg-[#a43d2b] text-slate-200 hover:text-white font-bold py-2 px-3 rounded ml-auto"
+            className="bg-[#a72008] hover:bg-[#a43d2b] text-slate-200 hover:text-white font-bold p-2 rounded ml-auto"
             onClick={async () => window.open("https://app.uniswap.org/")}
           >
             Buy on Uniswap
           </button>
           <ContractCalls className="" />
         </div>
-        <div className="ml-auto px-3">
+        <div className="ml-auto px-6">
           <Image
             src="chainlink_badge.jpeg"
             width={200}
@@ -35,7 +35,7 @@ export default function Home() {
           ></Image>
         </div>
 
-        <div className="p-3 flex flex-col space-y-2 ml-auto">
+        <div className="p-2 flex md:flex-col sm:flex-row">
           <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
           <SocialIcon
             url="https://twitter.com/Anti_MEV"
@@ -48,65 +48,95 @@ export default function Home() {
             fgColor="white"
           />
         </div>
-
-        <div className="bg-[#decb9f] absolute bottom-4 left-1/4 pt-2 max-w-fit rounded-lg px-8 space-y-4 text-slate-900">
-          <p>
-            Malicious bots steal millions from crypto users by reordering
-            transactions in a block.
-          </p>
-          <p>
-            Our code was developed specifically to fight back against this MEV
-            Mafia!
-          </p>
-          <ul className="space-y-4">
-            <li className="flex items-center hover:stroke-sky-600">
-              <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
-                <circle cx="12" cy="12" r="11" />
-                <path
-                  d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                  fill="none"
-                />
-              </svg>
-              <p className="ml-4">
-                Defeats sandwich attacks by requiring a 5 block delay between
-                transfers
-              </p>
-            </li>
-            <li className="flex items-center">
-              <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
-                <circle cx="12" cy="12" r="11" />
-                <path
-                  d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                  fill="none"
-                />
-              </svg>
-              <p className="ml-4">
-                Enforces an immutable Max Wallet size of 3.33% of token supply
-              </p>
-            </li>
-            <li className="flex items-center">
-              <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
-                <circle cx="12" cy="12" r="11" />
-                <path
-                  d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                  fill="none"
-                />
-              </svg>
-              <p className="ml-4">
-                Excludes a carefully curated list of known attack bots
-              </p>
-            </li>
-          </ul>
-          <div className="text-base font-semibold leading-7">
-            <p className="text-gray-900">Want to dig deeper into Anti-MEV?</p>
-            <p>
+        <div className="p-4 flex flex-col space-y-36">
+          <div className="bg-[#decb9f] drop-shadow-xl md:text-xl sm:text-base rounded-lg p-2 text-slate-800">
+            <p className="px-5">
+              Malicious bots steal millions from crypto users by bribing miners
+              to either front-run or sandwich their transactions
+            </p>
+            <p className="px-5">
+              This &quot;invisible tax&quot; is now known as{" "}
               <a
-                href="https://github.com/deanbred/Anti-MEV-Token.git"
-                className="text-sky-800 hover:text-sky-600"
+                href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
+                className="text-sky-800 hover:text-sky-600 text-base font-semibold leading-7"
               >
-                Read the code &rarr;
+                Maximal Extractable Value (MEV)
               </a>
             </p>
+            <p className="px-5">
+              These shady actors pollute this industry and make it harder for
+              legitimate traders to make it
+            </p>
+            <p className="px-5">
+              Our code was developed to protect users from these losses, and
+              deliver more of their trading profits
+            </p>
+          </div>
+          <div className="bg-[#decb9f] drop-shadow-xl md:text-xl sm:text-base rounded-lg p-2 text-slate-900">
+            <ul className="space-y-4">
+              <li className="flex items-center hover:stroke-sky-600">
+                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
+                  <circle cx="12" cy="12" r="11" />
+                  <path
+                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                    fill="none"
+                  />
+                </svg>
+                <p className="ml-4">
+                  Fights sandwich attacks by requiring blocks to be mined
+                  between 2 transfers from the same wallet
+                </p>
+              </li>
+              <li className="flex items-center">
+                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
+                  <circle cx="12" cy="12" r="11" />
+                  <path
+                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                    fill="none"
+                  />
+                </svg>
+                <p className="ml-4">
+                  Uses UniswapV3 sequencing tools to further defend against
+                  front-running
+                </p>
+              </li>
+              <li className="flex items-center">
+                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
+                  <circle cx="12" cy="12" r="11" />
+                  <path
+                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                    fill="none"
+                  />
+                </svg>
+                <p className="ml-4">
+                  Max Wallet size of 3% of supply limits price manipulation by a
+                  single whale
+                </p>
+              </li>
+              <li className="flex items-center">
+                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
+                  <circle cx="12" cy="12" r="11" />
+                  <path
+                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                    fill="none"
+                  />
+                </svg>
+                <p className="ml-4">
+                  Excludes a carefully curated list of known attack bots
+                </p>
+              </li>
+            </ul>
+            <div className="text-base font-semibold leading-7">
+              <p className="text-gray-900">Want to dig deeper into Anti-MEV?</p>
+              <p>
+                <a
+                  href="https://github.com/deanbred/Anti-MEV-Token.git"
+                  className="text-sky-800 hover:text-sky-600"
+                >
+                  Read the code &rarr;
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
