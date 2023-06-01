@@ -130,12 +130,12 @@ export default function ContractCalls() {
   }
 
   return (
-    <div className="flex flex-col float-right font-semibold text-slate-900">
+    <div className="flex flex-col float-left font-semibold text-slate-900">
       {raffleAddress ? (
         <>
           <div className="">
             <button
-              className="bg-[#a72008] hover:bg-[#a43d2b] text-slate-200 hover:text-white font-bold py-2 px-3 ml-20 rounded"
+              className="bg-[#af292c] hover:bg-[#a43d2b] text-slate-200 font-bold py-2 px-3 ml-10 mb-2 rounded"
               onClick={async () =>
                 await enterRaffle({
                   onSuccess: handleSuccess,

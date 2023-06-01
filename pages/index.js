@@ -16,17 +16,18 @@ export default function Home() {
         <link rel="icon" href="/logo-00.jpg" />
       </Head>
       <Header />
-      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-[url('../public/bg-01.jpeg')]">
+      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover md:bg-center bg-[url('../public/bg-01.jpeg')]">
         <div className="p-3">
+          <ContractCalls className="" />
+
           <button
-            className="bg-[#a72008] hover:bg-[#a43d2b] text-slate-200 hover:text-white font-bold p-2 rounded ml-auto"
+            className="bg-[#af292c] hover:bg-[#a43d2b] text-slate-200 font-bold p-2 rounded mr-8 float-right"
             onClick={async () => window.open("https://app.uniswap.org/")}
           >
             Buy on Uniswap
           </button>
-          <ContractCalls className="" />
         </div>
-        <div className="ml-auto px-6">
+        <div className="mr-auto px-6">
           <Image
             src="chainlink_badge.jpeg"
             width={200}
@@ -35,7 +36,7 @@ export default function Home() {
           ></Image>
         </div>
 
-        <div className="p-2 flex md:flex-col sm:flex-row">
+        <div className="ml-auto p-2 flex flex-col">
           <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
           <SocialIcon
             url="https://twitter.com/Anti_MEV"
@@ -49,7 +50,7 @@ export default function Home() {
           />
         </div>
         <div className="p-4 flex flex-col space-y-36">
-          <div className="bg-[#decb9f] drop-shadow-xl md:text-xl sm:text-base rounded-lg p-2 text-slate-800">
+          <div className=" bg-stone-200 drop-shadow-xl md:text-xl sm:text-base rounded-lg p-2 text-slate-800">
             <p className="px-5">
               Malicious bots steal millions from crypto users by bribing miners
               to either front-run or sandwich their transactions
@@ -72,7 +73,7 @@ export default function Home() {
               deliver more of their trading profits
             </p>
           </div>
-          <div className="bg-[#decb9f] drop-shadow-xl md:text-xl sm:text-base rounded-lg p-2 text-slate-900">
+          <div className="bg-stone-200 drop-shadow-xl md:text-xl sm:text-base rounded-lg p-2 text-slate-900">
             <ul className="space-y-4">
               <li className="flex items-center hover:stroke-sky-600">
                 <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
@@ -126,7 +127,7 @@ export default function Home() {
                 </p>
               </li>
             </ul>
-            <div className="text-base font-semibold leading-7">
+            <div className="mt-2 text-base font-semibold leading-7">
               <p className="text-gray-900">Want to dig deeper into Anti-MEV?</p>
               <p>
                 <a
