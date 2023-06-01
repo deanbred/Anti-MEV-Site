@@ -133,7 +133,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center">
+          <div className="mb-2 flex flex-row items-center justify-center">
           <Image
             src="chainlink_badge.jpeg"
             width={175}
