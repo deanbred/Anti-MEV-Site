@@ -130,12 +130,12 @@ export default function ContractCalls() {
   }
 
   return (
-    <div className="float-left font-semibold text-slate-900">
+    <div className="float-left font-semibold">
       {raffleAddress ? (
         <>
           <div className="">
             <button
-              className="bg-[#af292c] hover:bg-[#a43d2b] text-slate-200 font-bold py-2 px-3 mb-2 rounded"
+              className="p-2 bg-[#af292c] hover:bg-[#a43d2b] text-stone-200 font-bold rounded-2xl"
               onClick={async () =>
                 await enterRaffle({
                   onSuccess: handleSuccess,
@@ -150,7 +150,7 @@ export default function ContractCalls() {
                 "Enter Lottery"
               )}
             </button>
-            <div className="bg-[#decb9f] drop-shadow-lg lg:text-base md:text-sm sm:text-sm text-xs rounded-lg p-2 text-slate-800">
+            <div className="p-2 mt-2 bg-stone-200 opacity-90 lg:text-base md:text-sm sm:text-sm text-xs rounded-2xl">
               <p>Players: {numberOfPlayers}</p>
               <p>Jackpot: {jackpotString} ETH</p>
               <p>
