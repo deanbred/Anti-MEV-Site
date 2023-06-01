@@ -21,20 +21,11 @@ export default function Home() {
         <div className="p-3">
           <ContractCalls className="" />
           <button
-            className="p-2 float-right bg-[#a43d2b] hover:bg-[#af292c] text-stone-200 font-bold rounded-2xl"
+            className="p-2 float-right bg-[#a43d2b] text-stone-200 font-bold rounded-2xl"
             onClick={async () => window.open("https://app.uniswap.org/")}
           >
             Buy on Uniswap
           </button>
-        </div>
-
-        <div className="mr-auto ml-3">
-          <Image
-            src="chainlink_badge.jpeg"
-            width={175}
-            height={64}
-            alt="Logo"
-          ></Image>
         </div>
 
         <div className="flex flex-col">
@@ -76,7 +67,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="p-3 m-3 bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+          <div className="p-3 m-3 mt-10 bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <ul className="space-y-4">
               <li className="flex items-center">
                 <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
@@ -142,6 +133,14 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div className="flex flex-row items-center justify-center">
+          <Image
+            src="chainlink_badge.jpeg"
+            width={175}
+            height={64}
+            alt="Logo"
+          ></Image>
+        </div>
         </div>
       </div>
 

@@ -135,7 +135,7 @@ export default function ContractCalls() {
         <>
           <div className="">
             <button
-              className="p-2 bg-[#a43d2b] hover:bg-[#af292c] text-stone-200 font-bold rounded-2xl"
+              className="p-2 bg-[#a43d2b] text-stone-200 font-bold rounded-2xl"
               onClick={async () =>
                 await enterRaffle({
                   onSuccess: handleSuccess,
