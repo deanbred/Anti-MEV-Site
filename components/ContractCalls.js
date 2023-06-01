@@ -130,12 +130,12 @@ export default function ContractCalls() {
   }
 
   return (
-    <div className="flex flex-col float-left font-semibold text-slate-900">
+    <div className="float-left font-semibold text-slate-900">
       {raffleAddress ? (
         <>
           <div className="">
             <button
-              className="bg-[#af292c] hover:bg-[#a43d2b] text-slate-200 font-bold py-2 px-3 ml-10 mb-2 rounded"
+              className="bg-[#af292c] hover:bg-[#a43d2b] text-slate-200 font-bold py-2 px-3 mb-2 rounded"
               onClick={async () =>
                 await enterRaffle({
                   onSuccess: handleSuccess,
@@ -150,14 +150,13 @@ export default function ContractCalls() {
                 "Enter Lottery"
               )}
             </button>
-            <div className="bg-[#decb9f] drop-shadow-xl lg:text-base md:text-sm sm:text-sm text-xs rounded-lg p-2 text-slate-800">
-              <div>Total Players: {numberOfPlayers}</div>
-              <div>VRF Jackpot: {jackpotString} ETH</div>
-              <div>
-                Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")}{" "}
-                ETH
-              </div>
-              <div>Current State: {raffleString}</div>
+            <div className="bg-[#decb9f] drop-shadow-lg lg:text-base md:text-sm sm:text-sm text-xs rounded-lg p-2 text-slate-800">
+              <p>Players: {numberOfPlayers}</p>
+              <p>Jackpot: {jackpotString} ETH</p>
+              <p>
+                Entrance: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
+              </p>
+              <p>Current State: {raffleString}</p>
             </div>
           </div>
         </>

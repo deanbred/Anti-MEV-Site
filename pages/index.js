@@ -27,10 +27,10 @@ export default function Home() {
             Buy on Uniswap
           </button>
         </div>
-        <div className="mr-auto px-6">
+        <div className="mr-auto ml-3">
           <Image
             src="chainlink_badge.jpeg"
-            width={200}
+            width={175}
             height={64}
             alt="Logo"
           ></Image>
