@@ -21,7 +21,7 @@ export default function Home() {
         <div className="p-3">
           <ContractCalls className="" />
           <button
-            className="p-2 float-right bg-[#af292c] hover:bg-[#a43d2b] text-stone-200 font-bold rounded-2xl"
+            className="p-2 float-right bg-[#a43d2b] hover:bg-[#af292c] text-stone-200 font-bold rounded-2xl"
             onClick={async () => window.open("https://app.uniswap.org/")}
           >
             Buy on Uniswap
