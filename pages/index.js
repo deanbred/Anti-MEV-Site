@@ -16,12 +16,12 @@ export default function Home() {
         <link rel="icon" href="/logo-00.jpg" />
       </Head>
       <Header />
+
       <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover md:bg-center bg-[url('../public/bg-01.jpeg')]">
-        
         <div className="p-3">
           <ContractCalls className="" />
           <button
-            className="p-2 float-right bg-[#a43d2b] text-stone-200 font-bold rounded-2xl"
+            className="p-2 font-kake font-semibold float-right bg-[#af292c] text-stone-200 rounded-2xl"
             onClick={async () => window.open("https://app.uniswap.org/")}
           >
             Buy on Uniswap
@@ -133,14 +133,15 @@ export default function Home() {
               </p>
             </div>
           </div>
+
           <div className="mb-2 flex flex-row items-center justify-center">
-          <Image
-            src="chainlink_badge.jpeg"
-            width={175}
-            height={64}
-            alt="Logo"
-          ></Image>
-        </div>
+            <Image
+              src="chainlink_badge.jpeg"
+              width={175}
+              height={64}
+              alt="Logo"
+            ></Image>
+          </div>
         </div>
       </div>
 

@@ -7,7 +7,7 @@ export default function Header() {
       <div className="mr-auto">
         <Image src="logo-00.jpg" width={72} height={72} alt="Logo"></Image>
       </div>
-      <div className="px-3 text-[#a43d2b] lg:text-5xl md:text-3xl sm:text-xl font-semibold mr-auto">
+      <div className="px-3 flex flex-col justify-center text-[#af292c] font-kake lg:text-5xl md:text-3xl sm:text-xl font-semibold mr-auto">
         MEV Resistant ERC20 Token
       </div>
       <div className="flex flex-col justify-center">
