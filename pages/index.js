@@ -21,7 +21,7 @@ export default function Home() {
         <div className="p-4">
           <ContractCalls className="" />
           <button
-            className="p-2 font-kake font-semibold float-left bg-[#af292c] text-stone-200 rounded-2xl"
+            className="p-2 font-kake font-semibold float-left bg-[#af292c] hover:bg-[#600708] text-stone-200 rounded-2xl"
             onClick={async () => window.open("https://app.uniswap.org/")}
           >
             Buy on Uniswap
@@ -48,7 +48,7 @@ export default function Home() {
               legitimate traders
             </p>
             <p className="mt-3">
-              Anti-MEV code was developed to protect users from these losses
+              The Anti-MEV token was developed to protect users from these losses
             </p>
           </div>
 

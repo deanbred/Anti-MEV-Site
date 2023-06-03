@@ -8,7 +8,7 @@ export default function Header() {
         <Image src="logo-00.jpg" width={72} height={72} alt="Logo"></Image>
       </div>
       <div className="flex flex-col justify-center text-[#af292c] font-kake lg:mr-auto lg:text-5xl md:text-3xl sm:text-xl font-semibold">
-        ANTI-MEV ERC20 Token
+        ANTI-MEV Token
       </div>
       <div className="flex flex-col justify-center">
         <ConnectButton />

@@ -135,7 +135,7 @@ export default function ContractCalls() {
         <>
           <div className="">
             <button
-              className="p-2 font-kake bg-[#af292c] text-stone-200 rounded-2xl"
+              className="p-2 font-kake bg-[#af292c]  hover:bg-[#600708] text-stone-200 rounded-2xl"
               onClick={async () =>
                 await enterRaffle({
                   onSuccess: handleSuccess,
@@ -161,7 +161,7 @@ export default function ContractCalls() {
           </div>
         </>
       ) : (
-        <div>Connect to Ethereum Mainnet</div>
+        <div className="text-[#af292c]">Connect to Ethereum Mainnet</div>
       )}{" "}
     </div>
   )
