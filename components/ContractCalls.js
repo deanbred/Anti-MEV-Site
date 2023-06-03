@@ -130,7 +130,7 @@ export default function ContractCalls() {
   }
 
   return (
-    <div className="font-semibold float-left">
+    <div className="font-semibold float-right">
       {raffleAddress ? (
         <>
           <div className="">
@@ -150,7 +150,7 @@ export default function ContractCalls() {
                 "Enter Lottery"
               )}
             </button>
-            <div className="p-2 mt-2 bg-stone-200 opacity-90 lg:text-base md:text-sm sm:text-sm text-xs rounded-2xl">
+            <div className="p-2 mt-2 bg-stone-200 opacity-90 lg:text-sm md:text-sm sm:text-xs text-xs rounded-2xl">
               <p>Players: {numberOfPlayers}</p>
               <p>Jackpot: {jackpotString} ETH</p>
               <p>

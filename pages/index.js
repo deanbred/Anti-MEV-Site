@@ -17,24 +17,24 @@ export default function Home() {
       </Head>
       <Header />
 
-      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover md:bg-center bg-[url('../public/bg-01.jpeg')]">
-        <div className="p-3">
+      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-center bg-[url('../public/spider.png')]">
+        <div className="p-4">
           <ContractCalls className="" />
           <button
-            className="p-2 font-kake font-semibold float-right bg-[#af292c] text-stone-200 rounded-2xl"
+            className="p-2 font-kake font-semibold float-left bg-[#af292c] text-stone-200 rounded-2xl"
             onClick={async () => window.open("https://app.uniswap.org/")}
           >
             Buy on Uniswap
           </button>
         </div>
 
-        <div className="flex flex-col">
-          <div className="p-3 m-3 bg-stone-200 opacity-90  md:text-xl sm:text-base rounded-2xl">
+        <div className="m-3 flex flex-col items-center">
+          <div className="p-3 w-fit bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
-              Malicious bots steal millions from crypto users by bribing miners
-              to either front-run or sandwich their transactions
+              Malicious bots steal millions from crypto users through
+              front-running and sandwich attacks
             </p>
-            <p className="">
+            <p className="mt-3">
               This &quot;invisible tax&quot; is now known as{" "}
               <a
                 href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
@@ -43,17 +43,16 @@ export default function Home() {
                 Maximal Extractable Value (MEV)
               </a>
             </p>
-            <p className="">
-              These shady actors pollute this industry and make it harder for
-              legitimate traders to make it
+            <p className="mt-3">
+              These shady actors pollute our industry and rob profits from
+              legitimate traders
             </p>
-            <p className="">
-              Our code was developed to protect users from these losses, and
-              deliver more of their trading profits
+            <p className="mt-3">
+              Anti-MEV code was developed to protect users from these losses
             </p>
           </div>
 
-          <div className="flex flex-row items-center justify-center space-x-4">
+          <div className=" mt-3 flex flex-row items-center justify-center space-x-4">
             <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
             <SocialIcon
               url="https://twitter.com/Anti_MEV"
@@ -67,7 +66,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="p-3 m-3 mt-10 bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+          <div className="p-3 mt-3 bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <ul className="space-y-4">
               <li className="flex items-center">
                 <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
@@ -79,7 +78,7 @@ export default function Home() {
                 </svg>
                 <p className="ml-3">
                   Fights sandwich attacks by requiring blocks to be mined
-                  between 2 transfers from the same wallet
+                  between transfers from a wallet
                 </p>
               </li>
               <li className="flex items-center">
@@ -117,7 +116,19 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Excludes a carefully curated list of known attack bots
+                  Excludes a frequently updated list of known MEV attack bots
+                </p>
+              </li>
+              <li className="flex items-center">
+                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
+                  <circle cx="12" cy="12" r="11" />
+                  <path
+                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
+                    fill="none"
+                  />
+                </svg>
+                <p className="ml-3">
+                  No buy or sell taxes - no pre-sale - no bogus marketing wallet
                 </p>
               </li>
             </ul>
@@ -134,7 +145,55 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mb-2 flex flex-row items-center justify-center">
+          <div className="p-3 mt-3 w-fit bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+            <p className="">
+              At it&apos;s best, blockchain can provide cryptographic gaurantees and provably fair results
+            </p>
+
+            <p className="mt-3">
+              The Lottery above is a
+              <a
+                href="https://vrf.chain.link/"
+                className="text-sky-800 hover:text-sky-600 text-base font-semibold leading-7"
+              >
+                {" "}
+                verifyably fair
+              </a>
+              , totally{" "}
+              <a
+                href="https://automation.chain.link/"
+                className="text-sky-800 hover:text-sky-600 text-base font-semibold leading-7"
+              >
+                automated{" "}
+              </a>
+              contract that picks a weekly winner
+            </p>
+
+            <p className="mt-3">
+              <a
+                href="https://www.dextools.io/app/en/pairs"
+                className="text-sky-800 hover:text-sky-600 text-base font-semibold leading-7"
+              >
+                Anti-MEV{" "}
+              </a>
+              uses open source code from{" "}
+              <a
+                href="https://www.openzeppelin.com/"
+                className="text-sky-800 hover:text-sky-600 text-base font-semibold leading-7"
+              >
+                Openzeppelin{" "}
+              </a>
+              and AI generated art from{" "}
+              <a
+                href="https://discord.gg/midjourney"
+                className="text-sky-800 hover:text-sky-600 text-base font-semibold leading-7"
+              >
+                Midjourney{" "}
+              </a>
+            </p>
+          </div>
+
+          <div className="m-3 flex flex-row items-center justify-center">
             <Image
               src="chainlink_badge.jpeg"
               width={175}
