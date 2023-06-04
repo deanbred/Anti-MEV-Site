@@ -168,8 +168,7 @@ export default function Home() {
               smart contract that picks a winner each week
             </p>
             <p className="mt-3">
-              Winners are eligible for generous airdrops of $aMEV tokens from
-              based dev
+              Winners are eligible for generous airdrops of $aMEV tokens
             </p>
             <p className="mt-3 underline">
               <span className="underline font-semibold ">
@@ -197,7 +196,7 @@ export default function Home() {
                 Midjourney{" "}
               </a>
             </p>
-            <div className="mt-3 text-base font-semibold">
+            <div className="mt-1 text-base font-semibold">
               <Image
                 className="float-right rounded-md shadow-lg"
                 src="chainlink_badge.jpeg"
