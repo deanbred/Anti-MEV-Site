@@ -156,15 +156,14 @@ export default function Home() {
             </p>
 
             <p className="mt-3">
-              For example our lottery is a
+              For example, our lottery is a{" "}
               <a
                 href="https://vrf.chain.link/"
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
               >
-                {" "}
-                verifiably fair
+                verifiably fair{" "} 
               </a>
-              , fully{" "}
+              and fully{" "}
               <a
                 href="https://automation.chain.link/"
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
@@ -174,7 +173,7 @@ export default function Home() {
               smart contract that picks a winner each week
             </p>
 
-            <p className=" text-center">
+            <p className=" text-center underline">
               <span className="mt-3 ">
                 MEV is theft...{" "}
                 <a
