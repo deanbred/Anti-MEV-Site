@@ -7,7 +7,7 @@ export default function Header() {
       <div className="mr-auto">
         <Image src="logo-00.jpg" width={72} height={72} alt="Logo"></Image>
       </div>
-      <div className="flex flex-col justify-center text-[#af292c] font-kake lg:mr-auto lg:text-5xl md:text-3xl sm:text-xl font-semibold">
+      <div className=" ml-2 flex flex-col justify-center text-[#af292c] font-kake mr-auto lg:text-5xl md:text-4xl sm:text-xl font-semibold">
         ANTI-MEV Token
       </div>
       <div className="flex flex-col justify-center">

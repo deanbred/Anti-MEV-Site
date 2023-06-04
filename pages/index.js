@@ -127,7 +127,7 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Maintain a carefully curated list of known MEV attack bots
+                  Maintain a curated list of known MEV attack bots
                 </p>
               </li>
               <li className="flex items-center">
@@ -139,16 +139,15 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  No buy or sell taxes, no pre-sale, no bogus &quot;marketing
-                  wallet&quot;
+                  No taxes, pre-sale, or bogus &quot;marketing wallet&quot;
                 </p>
               </li>
             </ul>
           </div>
           <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
-              At it&apos;s best, blockchain tech can provide cryptographically
-              guaranteed agreements and transparent results
+              Blockchain technology can provide cryptographically guaranteed
+              agreements and minimize counter-party risk
             </p>
             <p className="mt-3">
               Our lottery demonstrates a{" "}
@@ -165,10 +164,10 @@ export default function Home() {
               >
                 automated{" "}
               </a>
-              smart contract that picks a winner each week
+              smart contract that picks a weekly winner
             </p>
             <p className="mt-3">
-              Winners are eligible for generous airdrops of $aMEV tokens
+              Winners eligible for generous airdrops of $aMEV tokens
             </p>
             <p className="mt-3 underline">
               <span className="underline font-semibold ">
@@ -188,7 +187,9 @@ export default function Home() {
               >
                 Openzeppelin{" "}
               </a>
-              and AI art from{" "}
+            </p>
+            <p className="text-center">
+              AI generated art from{" "}
               <a
                 href="https://discord.gg/midjourney"
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
@@ -204,8 +205,8 @@ export default function Home() {
                 height={64}
                 alt="Logo"
               ></Image>
-              <p className="ml-12">Want to dig deeper into Anti-MEV?</p>
-              <p className="ml-14">
+              <p className="ml-3">Want to dig deeper into Anti-MEV?</p>
+              <p className="ml-3">
                 <a
                   href="https://github.com/deanbred/Anti-MEV-Token.git"
                   className="text-sky-800 hover:text-sky-600"
