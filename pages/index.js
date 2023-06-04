@@ -216,7 +216,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+          <div className="p-3 mt-3 mb-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <a
               className=""
               data-theme="light"
