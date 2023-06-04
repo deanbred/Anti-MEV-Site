@@ -44,7 +44,7 @@ export default function Home() {
             <p className="mt-3 text-center">
               This{" "}
               <span className="font-semibold">&quot;invisible tax&quot;</span>{" "}
-              is now known as{" "}
+              is known as{" "}
               <a
                 href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
@@ -151,7 +151,7 @@ export default function Home() {
               guaranteed agreements and transparent results
             </p>
             <p className="mt-3">
-              For example, our lottery is a{" "}
+              Our lottery demonstrates a{" "}
               <a
                 href="https://vrf.chain.link/"
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"

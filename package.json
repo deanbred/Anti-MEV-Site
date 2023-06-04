@@ -14,7 +14,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "browserslist": "^4.21.5",
-    "caniuse-lite": "^1.0.30001477",
+    "caniuse-lite": "^1.0.30001494",
     "magic-sdk": "^17.2.1",
     "moralis": "^1.8.0",
     "moralis-v1": "^1.12.0",
@@ -23,11 +23,12 @@
     "react-dom": "18.0.0",
     "react-moralis": "^1.4.0",
     "react-social-icons": "^5.15.0",
-    "update-browserslist-db": "^1.0.10",
+    "update-browserslist-db": "^1.0.11",
     "web3uikit": "^1.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
+    "@babel/runtime": "^7.22.3",
     "autoprefixer": "^10.4.4",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
