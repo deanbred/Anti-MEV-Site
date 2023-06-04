@@ -9,14 +9,16 @@ let raffleString, jackpotString, id
 export default function ContractCalls() {
   const { Moralis, isWeb3Enabled, chainId, account } = useMoralis()
   id = parseInt(chainId)
-  console.log(`chain is ${id}`)
-  console.log(`account is ${account}`)
 
   const raffleAddress =
     id in contractAddresses ? contractAddresses[id][0] : null
-  console.log(`raffle address is ${raffleAddress}`)
 
   const tokenAddress = "0x8b88f72997f10c26CdeB500Fc6612C570a6a0A31"
+
+  //console.log(`chain is ${id}`)
+  //console.log(`account is ${account}`)
+  //console.log(`raffle address is ${raffleAddress}`)
+  //console.log(`token address is ${tokenAddress}`)
 
   // State hooks
   const [entranceFee, setEntranceFee] = useState("0")
@@ -130,7 +132,7 @@ export default function ContractCalls() {
   }
 
   return (
-    <div className="font-semibold float-right">
+    <div className="font-semibold">
       {raffleAddress ? (
         <>
           <div className="">
