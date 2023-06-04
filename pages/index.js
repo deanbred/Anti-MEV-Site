@@ -43,8 +43,8 @@ export default function Home() {
               </a>{" "}
               from users through front-running and sandwich attacks
             </p>
-            <p className="mt-3">
-              This{" "}
+            <p className="mt-3 text-center">
+            &rArr; This{" "}
               <span className="font-semibold">&quot;invisible tax&quot;</span>{" "}
               is now known as{" "}
               <a
@@ -52,10 +52,10 @@ export default function Home() {
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
               >
                 Maximal Extractable Value (MEV)
-              </a>
+              </a> &lArr; 
             </p>
-            <p className="mt-3">
-              This project was developed to{" "}
+            <p className="mt-3 text-center">
+              Our token was developed to{" "}
               <span className="font-semibold underline underline-offset-4">
                 protect users
               </span>{" "}
@@ -64,7 +64,6 @@ export default function Home() {
           </div>
 
           <div className=" m-3 flex flex-row items-center justify-center space-x-4">
-            <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
             <SocialIcon
               url="https://twitter.com/Anti_MEV"
               network="twitter"
@@ -75,12 +74,13 @@ export default function Home() {
               network="discord"
               fgColor="white"
             />
+            <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
           </div>
 
           <div className="p-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
               The <span className="font-semibold">MEV Mafia</span> pollutes our
-              industry and robs profits from legitimate crypto traders
+              industry and robs profits from legitimate traders
             </p>
             <ul className=" mt-3 space-y-4">
               <li className="flex items-center">
@@ -92,8 +92,8 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Fights sandwich attacks by requiring blocks to be mined
-                  between 2 transfers
+                  We prevent sandwich attacks by requiring blocks to be mined
+                  between 2 transfers from 1 wallet
                 </p>
               </li>
               <li className="flex items-center">
@@ -105,7 +105,7 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Uses UniswapV3 sequencing tools to further defend against
+                  Use decentralized sequencing tools to further defend against
                   front-running
                 </p>
               </li>
@@ -118,8 +118,8 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Max Wallet size of 3% of supply limits price manipulation by a
-                  single whale
+                  Limit price manipulation by enforcing a Max Wallet size of 3%
+                  of supply
                 </p>
               </li>
               <li className="flex items-center">
@@ -131,7 +131,7 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Excludes a frequently updated list of known MEV attack bots
+                  Maintain a carefully curated list of known MEV attack bots
                 </p>
               </li>
               <li className="flex items-center">
@@ -152,7 +152,7 @@ export default function Home() {
           <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
               At it&apos;s best, blockchain can provide cryptographically
-              guaranteed agreements and provably fair results
+              guaranteed agreements and transparent results
             </p>
 
             <p className="mt-3">
@@ -161,7 +161,7 @@ export default function Home() {
                 href="https://vrf.chain.link/"
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
               >
-                verifiably fair{" "} 
+                verifiably random{" "}
               </a>
               and fully{" "}
               <a
@@ -173,25 +173,23 @@ export default function Home() {
               smart contract that picks a winner each week
             </p>
 
-            <p className=" text-center underline">
-              <span className="mt-3 ">
-                MEV is theft...{" "}
-                <a
-                  href="https://vrf.chain.link/"
-                  className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
-                >
-                  Anti-MEV{" "}
-                </a>
-                gives back
+            <p className="mt-3">
+              Winners are eligible for generous airdrops of $aMEV tokens from the
+              based dev&trade;
+            </p>
+
+            <p className="mt-3 text-center underline">
+              <span className="underline font-semibold ">
+                MEV is theft... Anti-MEV gives back
               </span>
             </p>
           </div>
 
-          <div className="m-3 flex flex-col items-center justify-center">
+          <div className="mt-3 flex flex-col items-center justify-center">
             <ContractCalls className="" />
           </div>
 
-          <div className="p-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+          <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
               <a
                 href="https://www.dextools.io/app/en/pairs"
@@ -218,7 +216,7 @@ export default function Home() {
                 Midjourney{" "}
               </a>
             </p>
-            <div className="ml-12 mt-2 text-base font-semibold">
+            <div className="ml-6 mt-3 text-base font-semibold">
               <Image
                 className="float-right rounded-2xl"
                 src="chainlink_badge.jpeg"
@@ -240,7 +238,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="text-[7px]">dev actually based 1KEOY</footer>
+      <footer className="text-[6px] text-center">1KEOY</footer>
     </>
   )
 }
