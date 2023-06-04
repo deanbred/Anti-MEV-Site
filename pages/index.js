@@ -139,7 +139,7 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  No buy or sell taxes - no pre-sale - no bogus &quot;marketing
+                  No buy or sell taxes, no pre-sale, no bogus &quot;marketing
                   wallet&quot;
                 </p>
               </li>
@@ -182,16 +182,6 @@ export default function Home() {
           </div>
           <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="text-center">
-              <a
-                href="https://www.dextools.io/app/en/pairs"
-                className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
-              >
-                Anti-MEV{" "}
-              </a>{" "}
-              is a specialized crypto token that actively defends itself from
-              MEV theft
-            </p>
-            <p className="mt-3 text-center">
               Uses open source code from{" "}
               <a
                 href="https://www.openzeppelin.com/"
