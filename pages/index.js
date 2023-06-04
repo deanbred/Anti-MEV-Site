@@ -16,7 +16,6 @@ export default function Home() {
         <link rel="icon" href="/logo-00.jpg" />
       </Head>
       <Header />
-
       <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-center bg-[url('../public/spider.png')]">
         <div className="p-4">
           <button
@@ -26,7 +25,6 @@ export default function Home() {
             Buy on Uniswap
           </button>
         </div>
-
         <div className="m-3 flex flex-col items-center">
           <div className="p-3 max-w-4xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
@@ -34,17 +32,17 @@ export default function Home() {
               crypto token that actively defends itself from MEV theft
             </p>
             <p className="mt-3">
-              Malicious bots{" "}
+              Malicious{" "}
               <a
-                href="https://explore.flashbots.net/leaderboard"
+                href="https://eigenphi.io/"
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
               >
-                steal millions{" "}
+                MEV bots{" "}
               </a>{" "}
-              from users through front-running and sandwich attacks
+              have extracted over $1.3 billion from Ethereum users
             </p>
             <p className="mt-3 text-center">
-            &rArr; This{" "}
+              &rArr; This{" "}
               <span className="font-semibold">&quot;invisible tax&quot;</span>{" "}
               is now known as{" "}
               <a
@@ -52,7 +50,8 @@ export default function Home() {
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
               >
                 Maximal Extractable Value (MEV)
-              </a> &lArr; 
+              </a>{" "}
+              &lArr;
             </p>
             <p className="mt-3 text-center">
               Our token was developed to{" "}
@@ -62,7 +61,6 @@ export default function Home() {
               from these undue losses
             </p>
           </div>
-
           <div className=" m-3 flex flex-row items-center justify-center space-x-4">
             <SocialIcon
               url="https://twitter.com/Anti_MEV"
@@ -76,7 +74,6 @@ export default function Home() {
             />
             <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
           </div>
-
           <div className="p-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
               The <span className="font-semibold">MEV Mafia</span> pollutes our
@@ -143,18 +140,17 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  No buy or sell taxes - no pre-sale - no bogus marketing wallet
+                  No buy or sell taxes - no pre-sale - no bogus &quot;marketing
+                  wallet&quot;
                 </p>
               </li>
             </ul>
           </div>
-
           <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
-              At it&apos;s best, blockchain can provide cryptographically
+              At it&apos;s best, blockchain tech can provide cryptographically
               guaranteed agreements and transparent results
             </p>
-
             <p className="mt-3">
               For example, our lottery is a{" "}
               <a
@@ -172,23 +168,19 @@ export default function Home() {
               </a>
               smart contract that picks a winner each week
             </p>
-
             <p className="mt-3">
-              Winners are eligible for generous airdrops of $aMEV tokens from the
-              based dev&trade;
+              Winners are eligible for generous airdrops of $aMEV tokens from a
+              based dev
             </p>
-
             <p className="mt-3 text-center underline">
               <span className="underline font-semibold ">
-                MEV is theft... Anti-MEV gives back
+                MEV is theft... Anti-MEV gives back&trade;
               </span>
             </p>
           </div>
-
           <div className="mt-3 flex flex-col items-center justify-center">
             <ContractCalls className="" />
           </div>
-
           <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
               <a
@@ -218,7 +210,7 @@ export default function Home() {
             </p>
             <div className="ml-6 mt-3 text-base font-semibold">
               <Image
-                className="float-right rounded-2xl"
+                className="float-right rounded-md shadow-lg"
                 src="chainlink_badge.jpeg"
                 width={175}
                 height={64}
@@ -235,10 +227,22 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+            <a
+              className=""
+              data-theme="light"
+              href="https://twitter.com/Anti_MEV?ref_src=twsrc%5Etfw"
+            >
+              Tweets by <span className="font-semibold">@Anti-MEV</span>
+            </a>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+            ></script>
+          </div>
         </div>
       </div>
-
-      <footer className="text-[6px] text-center">1KEOY</footer>
+      <footer className="text-[8px] text-center">1KEOY</footer>
     </>
   )
 }
