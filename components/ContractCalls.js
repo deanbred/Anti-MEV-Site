@@ -163,7 +163,7 @@ export default function ContractCalls() {
           </div>
         </>
       ) : (
-        <div className="text-[#af292c]">Connect to Ethereum Mainnet</div>
+        <div className=" text-sky-50">Connect to Ethereum Mainnet for Lottery</div>
       )}{" "}
     </div>
   )
