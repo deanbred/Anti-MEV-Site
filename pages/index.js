@@ -25,7 +25,7 @@ export default function Home() {
             Buy on Uniswap
           </button>
         </div>
-        <div className="m-3 flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <div className="p-3 max-w-4xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
               <span className="font-semibold">Anti-MEV</span> is a specialized
