@@ -114,7 +114,7 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Limit price manipulation by enforcing a Max Wallet size of 3%
+                  Limit price manipulation with a Max Wallet size of 3%
                   of supply
                 </p>
               </li>
