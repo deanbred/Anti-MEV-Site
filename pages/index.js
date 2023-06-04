@@ -31,7 +31,7 @@ export default function Home() {
               <span className="font-semibold">Anti-MEV</span> is a specialized
               crypto token that actively defends itself from MEV theft
             </p>
-            <p className="mt-3">
+            <p className="mt-3 text-center">
               Malicious{" "}
               <a
                 href="https://eigenphi.io/"
@@ -42,7 +42,7 @@ export default function Home() {
               have extracted over $1.3 billion from Ethereum users
             </p>
             <p className="mt-3 text-center">
-              &rArr; This{" "}
+              This{" "}
               <span className="font-semibold">&quot;invisible tax&quot;</span>{" "}
               is now known as{" "}
               <a
@@ -51,7 +51,6 @@ export default function Home() {
               >
                 Maximal Extractable Value (MEV)
               </a>{" "}
-              &lArr;
             </p>
             <p className="mt-3 text-center">
               Our token was developed to{" "}
@@ -146,7 +145,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+          <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
               At it&apos;s best, blockchain tech can provide cryptographically
               guaranteed agreements and transparent results
@@ -169,10 +168,10 @@ export default function Home() {
               smart contract that picks a winner each week
             </p>
             <p className="mt-3">
-              Winners are eligible for generous airdrops of $aMEV tokens from a
+              Winners are eligible for generous airdrops of $aMEV tokens from
               based dev
             </p>
-            <p className="mt-3 text-center underline">
+            <p className="mt-3 underline">
               <span className="underline font-semibold ">
                 MEV is theft... Anti-MEV gives back&trade;
               </span>
@@ -182,7 +181,7 @@ export default function Home() {
             <ContractCalls className="" />
           </div>
           <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
-            <p className=" text-center">
+            <p className="text-center">
               <a
                 href="https://www.dextools.io/app/en/pairs"
                 className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
@@ -192,7 +191,7 @@ export default function Home() {
               is a specialized crypto token that actively defends itself from
               MEV theft
             </p>
-            <p className="mt-3">
+            <p className="mt-3 text-center">
               Uses open source code from{" "}
               <a
                 href="https://www.openzeppelin.com/"
@@ -208,7 +207,7 @@ export default function Home() {
                 Midjourney{" "}
               </a>
             </p>
-            <div className="ml-6 mt-3 text-base font-semibold">
+            <div className="mt-3 text-base font-semibold">
               <Image
                 className="float-right rounded-md shadow-lg"
                 src="chainlink_badge.jpeg"
@@ -216,8 +215,8 @@ export default function Home() {
                 height={64}
                 alt="Logo"
               ></Image>
-              <p>Want to dig deeper into Anti-MEV?</p>
-              <p>
+              <p className="ml-12">Want to dig deeper into Anti-MEV?</p>
+              <p className="ml-14">
                 <a
                   href="https://github.com/deanbred/Anti-MEV-Token.git"
                   className="text-sky-800 hover:text-sky-600"
