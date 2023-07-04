@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/logo-00.jpg" />
       </Head>
       <Header />
-      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-center bg-[url('../public/nanobots2.png')]">
+      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-center bg-[url('../public/bots-01.png')]">
         <div className="p-4">
           <button
             className="p-2 font-kake font-semibold float-left bg-[#af292c] hover:bg-[#600708] text-stone-200 rounded-2xl"
@@ -28,16 +28,25 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <div className="p-3 max-w-4xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
-              <span className="font-semibold">Anti-MEV</span> is a specialized
-              crypto token that actively defends itself from MEV theft
+              <a
+                href="https://dexscreener.com/goerli/0x98f04bf77cac682cdb6c6b41aaad5c59d5086c62"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
+              >
+                Anti-MEV
+              </a>{" "}
+              is a new crypto token that actively{" "}
+              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">
+                defends itself
+              </span>{" "}
+              from MEV theft
             </p>
             <p className="mt-3 text-center">
               Malicious{" "}
               <a
                 href="https://eigenphi.io/"
-                className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
               >
-                MEV bots{" "}
+                MEV bots
               </a>{" "}
               have extracted over $1.3 billion from Ethereum users
             </p>
@@ -47,9 +56,9 @@ export default function Home() {
               is known as{" "}
               <a
                 href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
-                className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
               >
-                Maximal Extractable Value (MEV)
+                Maximal Extractable Value
               </a>{" "}
             </p>
             <p className="mt-3 text-center">
@@ -75,8 +84,11 @@ export default function Home() {
           </div>
           <div className="p-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
-              The <span className="font-semibold">MEV Mafia</span> pollutes our
-              industry and robs profits from legitimate traders
+              The{" "}
+              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">
+                MEV Mafia
+              </span>{" "}
+              pollutes our industry and robs profits from legitimate traders
             </p>
             <ul className=" mt-3 space-y-4">
               <li className="flex items-center">
@@ -88,9 +100,13 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Sandwich Attacks: The contract requires blocks to be mined
-                  between 2 transfers from 1 wallet. This prevents bots from
-                  sandwiching your trade!
+                  {" "}
+                  <span className="text-[#af292c] font-kake font-semibold">
+                    Sandwich Attacks :
+                  </span>{" "}
+                  Our token contract requires blocks to be mined between 2
+                  transfers from 1 wallet - This prevents bots from sandwiching
+                  your trades
                 </p>
               </li>
               <li className="flex items-center">
@@ -102,8 +118,12 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Bribe Detector: The code calculates the gas to expect, and rejects 
-                  bribes from front-running bots!
+                  <span className="text-[#af292c] font-kake font-semibold">
+                    Bribe Detector :
+                  </span>{" "}
+                  The code calculates a rolling average of gas to expect, and
+                  rejects bribes from front-running bots - This limits the value
+                  extracted by reording transactions
                 </p>
               </li>
               <li className="flex items-center">
@@ -115,10 +135,14 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Limit price manipulation with a Max Wallet size of 4.9% of
-                  supply
+                  <span className="text-[#af292c] font-kake font-semibold">
+                    New Pair Snipers :
+                  </span>{" "}
+                  Max wallet size of 4.9% stops early aping bots from buying up
+                  the supply of 1,123,581,321 tokens
                 </p>
               </li>
+
               <li className="flex items-center">
                 <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
                   <circle cx="12" cy="12" r="11" />
@@ -127,50 +151,55 @@ export default function Home() {
                     fill="none"
                   />
                 </svg>
-                <p className="ml-3">
-                  Maintain a curated list of known MEV attack bots
+                <p className="ml-3 text-[#af292c] font-kake font-semibold">
+                  NO TAXES - NO PRE-SALE - NO VC BAGGAGE
                 </p>
               </li>
-              <li className="flex items-center">
-                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p className="ml-3">NO TAXES, pre-sale, or VC baggage</p>
-              </li>
+              <p className="text-center">
+                We actively maintain a growing list of known MEV attack bots
+              </p>
+              <p className="text-center">
+                Notice a new bot?{" "}
+                <a
+                  href="mailto:support@antimev.io?subject=New%20MEV%20Bot%20Detected"
+                  className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
+                >
+                  Let us know!
+                </a>
+              </p>
             </ul>
           </div>
           <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
-              Blockchain technology can provide cryptographically guaranteed
-              agreements and minimize counter-party risk
+              The transparency of blockchain allows us to see these bots attack
+              in real time
+            </p>
+            <p className="mt-3 text-[#af292c] font-kake font-semibold">
+              Now we can stop them!
             </p>
             <p className="mt-3">
-              Our lottery demonstrates a{" "}
+              Optional lottery is a{" "}
               <a
                 href="https://vrf.chain.link/"
-                className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
                 verifiably random{" "}
               </a>
               and fully{" "}
               <a
                 href="https://automation.chain.link/"
-                className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
                 automated{" "}
               </a>
               smart contract that picks a weekly winner
             </p>
             <p className="mt-3">
-              Winners eligible for generous airdrops of $aMEV tokens
+              Winners entered for monthly airdrops of tokens
             </p>
             <p className="mt-3 underline">
-              <span className="underline font-semibold ">
-                MEV is theft... Anti-MEV gives back&trade;
+              <span className="text-[#af292c] font-kake underline font-semibold ">
+                MEV is theft... Anti-MEV gives back
               </span>
             </p>
           </div>
@@ -182,7 +211,7 @@ export default function Home() {
               Uses open source code from{" "}
               <a
                 href="https://www.openzeppelin.com/"
-                className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
                 Openzeppelin{" "}
               </a>
@@ -191,7 +220,7 @@ export default function Home() {
               AI generated art from{" "}
               <a
                 href="https://discord.gg/midjourney"
-                className="text-sky-800 hover:text-sky-600 font-semibold leading-7"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
                 Midjourney{" "}
               </a>
@@ -204,13 +233,13 @@ export default function Home() {
                 height={64}
                 alt="Logo"
               ></Image>
-              <p className="ml-3">Want to dig deeper into Anti-MEV?</p>
+              <p className="ml-3">Want a deep dive into Anti-MEV?</p>
               <p className="ml-3">
                 <a
                   href="https://github.com/deanbred/Anti-MEV-Token.git"
-                  className="text-sky-800 hover:text-sky-600"
+                  className="text-sky-800 hover:text-[#af292c] font-kake"
                 >
-                  Read the code &rarr;
+                  Read the code
                 </a>
               </p>
             </div>
@@ -221,7 +250,10 @@ export default function Home() {
               data-theme="light"
               href="https://twitter.com/Anti_MEV?ref_src=twsrc%5Etfw"
             >
-              Tweets by <span className="font-semibold">@Anti-MEV</span>
+              Tweets by @
+              <span className="text-[#af292c] font-kake font-semibold">
+                Anti-MEV
+              </span>
             </a>
             <script
               async
@@ -230,7 +262,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="text-[8px] text-center">1KEOY</footer>
+      <footer className="text-[7px] text-center">1KEOY</footer>
     </>
   )
 }
