@@ -183,7 +183,7 @@ export default function Home() {
               Now we can stop them!
             </p>
             <p className="mt-3">
-              Optional weekly lottery is a{" "}
+              Weekly lottery is a{" "}
               <a
                 href="https://vrf.chain.link/"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
