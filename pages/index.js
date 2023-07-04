@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/logo-00.jpg" />
       </Head>
       <Header />
-      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-center bg-[url('../public/spider.png')]">
+      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-center bg-[url('../public/nanobots2.png')]">
         <div className="p-4">
           <button
             className="p-2 font-kake font-semibold float-left bg-[#af292c] hover:bg-[#600708] text-stone-200 rounded-2xl"
@@ -88,8 +88,9 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  We prevent sandwich attacks by requiring blocks to be mined
-                  between 2 transfers from 1 wallet
+                  Sandwich Attacks: The contract requires blocks to be mined
+                  between 2 transfers from 1 wallet. This prevents bots from
+                  sandwiching your trade!
                 </p>
               </li>
               <li className="flex items-center">
@@ -101,8 +102,8 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Use decentralized sequencing tools to further defend against
-                  front-running
+                  Bribe Detector: The code calculates the gas to expect, and rejects 
+                  bribes from front-running bots!
                 </p>
               </li>
               <li className="flex items-center">
@@ -114,8 +115,8 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3">
-                  Limit price manipulation with a Max Wallet size of 3%
-                  of supply
+                  Limit price manipulation with a Max Wallet size of 4.9% of
+                  supply
                 </p>
               </li>
               <li className="flex items-center">
@@ -138,9 +139,7 @@ export default function Home() {
                     fill="none"
                   />
                 </svg>
-                <p className="ml-3">
-                  No taxes, pre-sale, or bogus &quot;marketing wallet&quot;
-                </p>
+                <p className="ml-3">NO TAXES, pre-sale, or VC baggage</p>
               </li>
             </ul>
           </div>
