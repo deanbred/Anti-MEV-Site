@@ -153,17 +153,37 @@ export default function ContractCalls() {
               )}
             </button>
             <div className="p-2 mt-2 bg-stone-200 opacity-90 lg:text-sm md:text-sm sm:text-xs text-xs rounded-2xl">
-              <p>Players: {numberOfPlayers}</p>
-              <p>Jackpot: {jackpotString} ETH</p>
               <p>
-                Entrance: {ethers.utils.formatUnits(entranceFee, "ether")} ETH
+                Players:{" "}
+                <span className="text-sky-800 font-kake font-semibold">
+                  {numberOfPlayers}
+                </span>
               </p>
-              <p>Current State: {raffleString}</p>
+              <p>
+                Jackpot:{" "}
+                <span className="text-sky-800 font-kake font-semibold">
+                  {jackpotString} ETH
+                </span>
+              </p>
+              <p>
+                Entrance:{" "}
+                <span className="text-sky-800 font-kake font-semibold">
+                  {ethers.utils.formatUnits(entranceFee, "ether")} ETH
+                </span>
+              </p>
+              <p>
+                Current State:{" "}
+                <span className="text-sky-800 font-kake font-semibold">
+                  {raffleString}
+                </span>
+              </p>
             </div>
           </div>
         </>
       ) : (
-        <div className=" text-sky-50">Connect to Ethereum Mainnet for Lottery</div>
+        <div className=" text-sky-50">
+          Connect to Ethereum Mainnet for Lottery
+        </div>
       )}{" "}
     </div>
   )

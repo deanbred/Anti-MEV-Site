@@ -44,7 +44,7 @@ export default function Home() {
               Malicious{" "}
               <a
                 href="https://eigenphi.io/"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
                 MEV bots
               </a>{" "}
@@ -52,18 +52,18 @@ export default function Home() {
             </p>
             <p className="mt-3 text-center">
               This{" "}
-              <span className="font-semibold">&quot;invisible tax&quot;</span>{" "}
+              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">Invisible tax</span>{" "}
               is known as{" "}
               <a
                 href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
                 Maximal Extractable Value
               </a>{" "}
             </p>
             <p className="mt-3 text-center">
               Our token was developed to{" "}
-              <span className="font-semibold underline underline-offset-4">
+              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">
                 protect users
               </span>{" "}
               from these undue losses
@@ -178,7 +178,7 @@ export default function Home() {
               Now we can stop them!
             </p>
             <p className="mt-3">
-              Optional lottery is a{" "}
+              Optional weekly lottery is a{" "}
               <a
                 href="https://vrf.chain.link/"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
@@ -192,10 +192,11 @@ export default function Home() {
               >
                 automated{" "}
               </a>
-              smart contract that picks a weekly winner
+              smart contract
             </p>
             <p className="mt-3">
-              Winners entered for monthly airdrops of tokens
+              Winners entered for monthly{" "}
+              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">Airdrops</span>{" "}
             </p>
             <p className="mt-3 underline">
               <span className="text-[#af292c] font-kake underline font-semibold ">
@@ -206,7 +207,7 @@ export default function Home() {
           <div className="mt-3 flex flex-col items-center justify-center">
             <ContractCalls className="" />
           </div>
-          <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+          <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-base sm:text-base rounded-2xl">
             <p className="text-center">
               Uses open source code from{" "}
               <a
@@ -244,7 +245,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="p-3 mt-3 mb-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+          <div className="p-3 mt-3 mb-3 max-w-3xl bg-stone-200 opacity-90 md:text-base sm:text-base rounded-2xl">
             <a
               className=""
               data-theme="light"
