@@ -35,7 +35,7 @@ export default function Home() {
                 Anti-MEV
               </a>{" "}
               is a new crypto token that actively{" "}
-              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">
+              <span className="text-[#af292c] font-kake font-semibold">
                 defends itself
               </span>{" "}
               from MEV theft
@@ -52,7 +52,7 @@ export default function Home() {
             </p>
             <p className="mt-3 text-center">
               This{" "}
-              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">Invisible tax</span>{" "}
+              <span className="text-[#af292c] font-kake font-semibold">Invisible tax</span>{" "}
               is known as{" "}
               <a
                 href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
@@ -63,7 +63,7 @@ export default function Home() {
             </p>
             <p className="mt-3 text-center">
               Our token was developed to{" "}
-              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">
+              <span className="text-[#af292c] font-kake font-semibold">
                 protect users
               </span>{" "}
               from these undue losses
@@ -139,7 +139,12 @@ export default function Home() {
                     New Pair Snipers :
                   </span>{" "}
                   Max wallet size of 4.9% stops early aping bots from buying up
-                  the supply of 1,123,581,321 tokens
+                  the supply of{" "}                <a
+                  href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
+                  className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
+                >
+                  1,123,581,321
+                </a>{" "}tokens
                 </p>
               </li>
 
@@ -152,7 +157,7 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3 text-[#af292c] font-kake font-semibold">
-                  NO TAXES - NO PRE-SALE - NO VC BAGGAGE
+                  NO TAXES : NO PRE-SALE : NO VC BAGS
                 </p>
               </li>
               <p className="text-center">
@@ -263,7 +268,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="text-[7px] text-center">1KEOY</footer>
+      <footer className="text-[8px] text-center">1KEOY</footer>
     </>
   )
 }
