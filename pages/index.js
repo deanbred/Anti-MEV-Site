@@ -85,7 +85,7 @@ export default function Home() {
           <div className="p-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
               The{" "}
-              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">
+              <span className="text-sky-800 font-kake font-semibold">
                 MEV Mafia
               </span>{" "}
               pollutes our industry and robs profits from legitimate traders
@@ -157,11 +157,11 @@ export default function Home() {
                   />
                 </svg>
                 <p className="ml-3 text-[#af292c] font-kake font-semibold">
-                  NO TAXES : NO PRE-SALE : NO VC BAGS
+                  NO TAXES : NO PRE-SALE : NO VC
                 </p>
               </li>
               <p className="text-center">
-                We actively maintain a growing list of known MEV attack bots
+                We carefully maintain a growing list of known MEV attack bots
               </p>
               <p className="text-center">
                 Notice a new bot?{" "}
@@ -169,7 +169,7 @@ export default function Home() {
                   href="mailto:support@antimev.io?subject=New%20MEV%20Bot%20Detected"
                   className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
                 >
-                  Let us know!
+                  Let us know
                 </a>
               </p>
             </ul>
@@ -201,10 +201,10 @@ export default function Home() {
             </p>
             <p className="mt-3">
               Winners entered for monthly{" "}
-              <span className="text-sky-800 hover:text-[#af292c] font-kake font-semibold">Airdrops</span>{" "}
+              <span className="text-sky-800 font-kake font-semibold">Airdrops</span>{" "}
             </p>
-            <p className="mt-3 underline">
-              <span className="text-[#af292c] font-kake underline font-semibold ">
+            <p className="mt-3 text-sky-800 underline">
+              <span className="text-[#af292c] font-kake font-semibold">
                 MEV is theft... Anti-MEV gives back
               </span>
             </p>
@@ -233,9 +233,9 @@ export default function Home() {
             </p>
             <div className="mt-1 text-base font-semibold">
               <Image
-                className="float-right rounded-md shadow-lg"
+                className="mt-3 float-right rounded-md shadow-lg"
                 src="chainlink_badge.jpeg"
-                width={175}
+                width={165}
                 height={64}
                 alt="Logo"
               ></Image>
