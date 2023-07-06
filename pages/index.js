@@ -17,9 +17,9 @@ export default function Home() {
       </Head>
       <Header />
       <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-center bg-[url('../public/bots-01.png')]">
-        <div className="p-4">
+        <div className="p-4 lg:mr-auto md:mr-auto sm:mr-auto ">
           <button
-            className="p-2 font-kake font-semibold float-left bg-[#af292c] hover:bg-[#600708] text-stone-200 rounded-2xl"
+            className="p-2 font-kake font-semibold bg-[#af292c] hover:bg-[#600708] text-stone-200 rounded-2xl"
             onClick={async () => window.open("https://app.uniswap.org/")}
           >
             Buy on Uniswap
@@ -119,11 +119,11 @@ export default function Home() {
                 </svg>
                 <p className="ml-3">
                   <span className="text-[#af292c] font-kake font-semibold">
-                    Bribe Detector :
+                    Front-Running :
                   </span>{" "}
-                  The code calculates a rolling average of gas to expect, and
+                  Bribe detection code calculates a rolling average of gas to expect, and
                   rejects bribes from front-running bots - This limits the value
-                  extracted by reording transactions
+                  extracted by inserting transactions
                 </p>
               </li>
               <li className="flex items-center">
@@ -176,7 +176,7 @@ export default function Home() {
           </div>
           <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
-              The transparency of blockchain allows us to see these bots attack
+              The transparency of blockchain tech allows us to see these bots attack
               in real time
             </p>
             <p className="mt-3 text-[#af292c] font-kake font-semibold">
@@ -190,17 +190,17 @@ export default function Home() {
               >
                 verifiably random{" "}
               </a>
-              and fully{" "}
+              and{" "}
               <a
                 href="https://automation.chain.link/"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
-                automated{" "}
+                fully automated{" "}
               </a>
               smart contract
             </p>
             <p className="mt-3">
-              Winners entered for monthly{" "}
+              Winners entered for additional{" "}
               <span className="text-sky-800 font-kake font-semibold">Airdrops</span>{" "}
             </p>
             <p className="mt-3 text-sky-800 underline">

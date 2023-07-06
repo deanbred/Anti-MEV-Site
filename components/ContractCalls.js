@@ -13,7 +13,7 @@ export default function ContractCalls() {
   const raffleAddress =
     id in contractAddresses ? contractAddresses[id][0] : null
 
-  const tokenAddress = "0x8b88f72997f10c26CdeB500Fc6612C570a6a0A31"
+  const tokenAddress = "0xFe76D47cD946a3fEF19A3991ED2350c5B0B3D6c4"
 
   //console.log(`chain is ${id}`)
   //console.log(`account is ${account}`)
