@@ -26,21 +26,35 @@ export default function Home() {
           </button>
         </div>
         <div className="flex flex-col items-center">
-          <div className="p-3 max-w-4xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
-            <p className=" text-center">
+          <div className="p-3 text-center max-w-4xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+            <p className="">
               <a
                 href="https://dexscreener.com/goerli/0x98f04bf77cac682cdb6c6b41aaad5c59d5086c62"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
               >
                 Anti-MEV
               </a>{" "}
-              is a new crypto token that actively{" "}
+              is a crypto token that actively{" "}
               <span className="text-[#af292c] font-kake font-semibold">
                 defends itself
               </span>{" "}
               from MEV theft
             </p>
-            <p className="mt-3 text-center">
+
+            <p className="mt-1">
+              This{" "}
+              <span className="text-[#af292c] font-kake font-semibold">
+                Invisible tax
+              </span>{" "}
+              is known as{" "}
+              <a
+                href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
+              >
+                Maximal Extractable Value
+              </a>{" "}
+            </p>
+            <p className="mt-1">
               Malicious{" "}
               <a
                 href="https://eigenphi.io/"
@@ -50,18 +64,7 @@ export default function Home() {
               </a>{" "}
               have extracted over $1.3 billion from Ethereum users
             </p>
-            <p className="mt-3 text-center">
-              This{" "}
-              <span className="text-[#af292c] font-kake font-semibold">Invisible tax</span>{" "}
-              is known as{" "}
-              <a
-                href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-              >
-                Maximal Extractable Value
-              </a>{" "}
-            </p>
-            <p className="mt-3 text-center">
+            <p className="mt-1">
               Our token was developed to{" "}
               <span className="text-[#af292c] font-kake font-semibold">
                 protect users
@@ -69,7 +72,7 @@ export default function Home() {
               from these undue losses
             </p>
           </div>
-          <div className=" m-3 flex flex-row items-center justify-center space-x-4">
+          <div className="m-3 flex flex-row items-center justify-center space-x-4">
             <SocialIcon
               url="https://twitter.com/Anti_MEV"
               network="twitter"
@@ -90,7 +93,7 @@ export default function Home() {
               </span>{" "}
               pollutes our industry and robs profits from legitimate traders
             </p>
-            <ul className=" mt-3 space-y-4">
+            <ul className="mt-1 space-y-2">
               <li className="flex items-center">
                 <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
                   <circle cx="12" cy="12" r="11" />
@@ -121,9 +124,9 @@ export default function Home() {
                   <span className="text-[#af292c] font-kake font-semibold">
                     Front-Running :
                   </span>{" "}
-                  Bribe detection code calculates a rolling average of gas to expect, and
-                  rejects bribes from front-running bots - This limits the value
-                  extracted by inserting transactions
+                  Bribe detection code calculates a rolling average of gas to
+                  expect, and rejects bribes from front-running bots - This
+                  limits the value extracted by inserting transactions
                 </p>
               </li>
               <li className="flex items-center">
@@ -139,50 +142,44 @@ export default function Home() {
                     New Pair Snipers :
                   </span>{" "}
                   Max wallet size of 4.9% stops early aping bots from buying up
-                  the supply of{" "}                <a
-                  href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
-                  className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-                >
-                  1,123,581,321
-                </a>{" "}tokens
+                  the supply of{" "}
+                  <a
+                    href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
+                    className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
+                  >
+                    1,123,581,321
+                  </a>{" "}
+                  tokens
                 </p>
               </li>
-
-              <li className="flex items-center">
-                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p className="ml-3 text-[#af292c] font-kake font-semibold">
-                  NO TAXES : NO PRE-SALE : NO VC
-                </p>
-              </li>
-              <p className="text-center">
-                We carefully maintain a growing list of known MEV attack bots
-              </p>
-              <p className="text-center">
-                Notice a new bot?{" "}
-                <a
-                  href="mailto:support@antimev.io?subject=New%20MEV%20Bot%20Detected"
-                  className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
-                >
-                  Let us know
-                </a>
-              </p>
             </ul>
+            <p className="mt-2 text-center text-[#af292c] font-kake font-semibold">
+              NO TAXES : NO PRE-SALE : NO VC Bags
+            </p>
           </div>
           <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
-              The transparency of blockchain tech allows us to see these bots attack
-              in real time
+              The transparency of blockchain tech allows us to see these bots
+              attack in real time
             </p>
-            <p className="mt-3 text-[#af292c] font-kake font-semibold">
+            <p className="mt-1 text-[#af292c] font-kake font-semibold">
               Now we can stop them!
             </p>
-            <p className="mt-3">
+            <p className="mt-1 text-center">
+              We carefully maintain a growing list of known MEV attack bots
+            </p>
+            <p className="mt-1 text-center">
+              Notice a new bot?{" "}
+              <a
+                href="mailto:support@antimev.io?subject=New%20MEV%20Bot%20Detected"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
+              >
+                Let us know
+              </a>
+            </p>
+          </div>
+          <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+            <p className="">
               Weekly lottery is a{" "}
               <a
                 href="https://vrf.chain.link/"
@@ -199,11 +196,13 @@ export default function Home() {
               </a>
               smart contract
             </p>
-            <p className="mt-3">
+            <p className="mt-1">
               Winners entered for additional{" "}
-              <span className="text-sky-800 font-kake font-semibold">Airdrops</span>{" "}
+              <span className="text-sky-800 font-kake font-semibold">
+                Airdrops
+              </span>{" "}
             </p>
-            <p className="mt-3 text-sky-800 underline">
+            <p className="mt-2 text-sky-800 underline">
               <span className="text-[#af292c] font-kake font-semibold">
                 MEV is theft... Anti-MEV gives back
               </span>
