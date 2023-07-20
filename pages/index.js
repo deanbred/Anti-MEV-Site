@@ -35,7 +35,7 @@ export default function Home() {
                 Anti-MEV
               </a>{" "}
               is a crypto token that actively{" "}
-              <span className="text-[#af292c] font-kake font-semibold">
+              <span className="text-sky-800 font-kake font-semibold">
                 defends itself
               </span>{" "}
               from MEV theft
@@ -43,7 +43,7 @@ export default function Home() {
 
             <p className="mt-1">
               This{" "}
-              <span className="text-[#af292c] font-kake font-semibold">
+              <span className="text-sky-800 font-kake font-semibold">
                 Invisible tax
               </span>{" "}
               is known as{" "}
@@ -66,7 +66,7 @@ export default function Home() {
             </p>
             <p className="mt-1">
               Our token was developed to{" "}
-              <span className="text-[#af292c] font-kake font-semibold">
+              <span className="text-sky-800 font-kake font-semibold">
                 protect users
               </span>{" "}
               from these undue losses
@@ -153,7 +153,7 @@ export default function Home() {
                 </p>
               </li>
             </ul>
-            <p className="mt-2 text-center text-[#af292c] font-kake font-semibold">
+            <p className="mt-2 text-center text-sky-800 font-kake font-semibold">
               NO TAXES : NO PRE-SALE : NO VC Bags
             </p>
           </div>
@@ -162,7 +162,7 @@ export default function Home() {
               The transparency of blockchain tech allows us to see these bots
               attack in real time
             </p>
-            <p className="mt-1 text-[#af292c] font-kake font-semibold">
+            <p className="mt-1 text-sky-800 font-kake font-semibold">
               Now we can stop them!
             </p>
             <p className="mt-1 text-center">
@@ -256,7 +256,7 @@ export default function Home() {
               href="https://twitter.com/Anti_MEV?ref_src=twsrc%5Etfw"
             >
               Tweets by @
-              <span className="text-[#af292c] font-kake font-semibold">
+              <span className="text-sky-800 font-kake font-semibold">
                 Anti-MEV
               </span>
             </a>
