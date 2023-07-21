@@ -35,7 +35,7 @@ export default function Home() {
                 Anti-MEV
               </a>{" "}
               is a crypto token that actively{" "}
-              <span className="text-sky-800 font-kake font-semibold">
+              <span className="text-[#af292c] font-kake font-semibold">
                 defends itself
               </span>{" "}
               from MEV theft
@@ -66,10 +66,10 @@ export default function Home() {
             </p>
             <p className="mt-1">
               Our token was developed to{" "}
-              <span className="text-sky-800 font-kake font-semibold">
+              <span className="text-[#af292c] font-kake font-semibold">
                 protect users
               </span>{" "}
-              from these undue losses
+              from undue losses
             </p>
           </div>
           <div className="m-3 flex flex-row items-center justify-center space-x-4">
@@ -125,8 +125,8 @@ export default function Home() {
                     Front-Running :
                   </span>{" "}
                   Bribe detection code calculates a rolling average of gas to
-                  expect, and rejects bribes from front-running bots - This
-                  limits the value extracted by inserting transactions
+                  expect, and rejects bribes from front-running bots - This defends against bots 
+                  who extract value by inserting transactions
                 </p>
               </li>
               <li className="flex items-center">
@@ -162,7 +162,7 @@ export default function Home() {
               The transparency of blockchain tech allows us to see these bots
               attack in real time
             </p>
-            <p className="mt-1 text-sky-800 font-kake font-semibold">
+            <p className="mt-1 text-[#af292c] font-kake font-semibold">
               Now we can stop them!
             </p>
             <p className="mt-1 text-center">
@@ -208,12 +208,26 @@ export default function Home() {
               </span>
             </p>
           </div>
+          <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
+            <p className="">
+              <span className="text-sky-800 font-kake font-semibold">
+                Fair sequencing
+              </span>{" "}
+              is a critical next step to build trust-minimized blockchain tech
+            </p>
+            <p className="mt-1">
+              Until they #DecentralizeTheSequencer there is{" "}
+              <span className="text-sky-800 font-kake font-semibold">
+                Anti-mev
+              </span>{" "}
+            </p>
+          </div>
           <div className="mt-3 flex flex-col items-center justify-center">
             <ContractCalls className="" />
           </div>
           <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-base sm:text-base rounded-2xl">
             <p className="text-center">
-              Uses open source code from{" "}
+              Built upon secure code from{" "}
               <a
                 href="https://www.openzeppelin.com/"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
@@ -256,7 +270,7 @@ export default function Home() {
               href="https://twitter.com/Anti_MEV?ref_src=twsrc%5Etfw"
             >
               Tweets by @
-              <span className="text-sky-800 font-kake font-semibold">
+              <span className="text-[#af292c] font-kake font-semibold">
                 Anti-MEV
               </span>
             </a>
