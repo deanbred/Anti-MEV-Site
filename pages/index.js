@@ -77,11 +77,11 @@ export default function Home() {
               fgColor="white"
             />
             <SocialIcon
-              url="https://discord.gg/nab3H9cyZQ"
+              url="https://discord.gg/rD8cZH8mj"
               network="discord"
               fgColor="white"
             />
-            <SocialIcon url="https://t.me" network="telegram" fgColor="white" />
+            <SocialIcon url="https://t.me/+6fLZMwEgcRAzN2Mx" network="telegram" fgColor="white" />
           </div>
           <div className="p-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
