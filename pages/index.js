@@ -81,7 +81,7 @@ export default function Home() {
               network="discord"
               fgColor="white"
             />
-            <SocialIcon url="https://t.me/+6fLZMwEgcRAzN2Mx" network="telegram" fgColor="white" />
+            <SocialIcon url="https://t.me/AntimevPortal" network="telegram" fgColor="white" />
           </div>
           <div className="p-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className=" text-center">
