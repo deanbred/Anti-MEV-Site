@@ -55,12 +55,11 @@ export default function Home() {
               </a>{" "}
             </p>
             <p className="mt-1">
-              Malicious{" "}
               <a
                 href="https://eigenphi.io/"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
-                MEV bots
+              MEV bots
               </a>{" "}
               have extracted over $1.3 billion from Ethereum users
             </p>
@@ -125,8 +124,9 @@ export default function Home() {
                     Front-Running :
                   </span>{" "}
                   Bribe detection code calculates a rolling average of gas to
-                  expect, and rejects bribes from front-running bots - This defends against bots 
-                  who extract value by inserting transactions
+                  expect, and rejects bribes from front-running bots - This
+                  defends against bots who extract value by inserting
+                  transactions
                 </p>
               </li>
               <li className="flex items-center">
