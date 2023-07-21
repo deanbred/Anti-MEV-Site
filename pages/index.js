@@ -29,7 +29,7 @@ export default function Home() {
           <div className="p-3 text-center max-w-4xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
             <p className="">
               <a
-                href="https://dexscreener.com/goerli/0x98f04bf77cac682cdb6c6b41aaad5c59d5086c62"
+                href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
               >
                 Anti-MEV
@@ -40,26 +40,25 @@ export default function Home() {
               </span>{" "}
               from MEV theft
             </p>
-
             <p className="mt-1">
               This{" "}
-              <span className="text-sky-800 font-kake font-semibold">
-                Invisible tax
-              </span>{" "}
-              is known as{" "}
               <a
-                href="https://www.coindesk.com/learn/what-is-mev-aka-maximal-extractable-value/"
+                href="https://cointelegraph.com/learn/what-is-mev-ethereums-invisible-tax"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
-                Maximal Extractable Value
+                Invisible tax
               </a>{" "}
+              is known as{" "}
+              <span className="text-sky-800 font-kake font-semibold">
+                Miner Extractable Value
+              </span>{" "}
             </p>
             <p className="mt-1">
               <a
                 href="https://eigenphi.io/"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
-              MEV bots
+                MEV bots
               </a>{" "}
               have extracted over $1.3 billion from Ethereum users
             </p>
@@ -125,8 +124,7 @@ export default function Home() {
                   </span>{" "}
                   Bribe detection code calculates a rolling average of gas to
                   expect, and rejects bribes from front-running bots - This
-                  defends against bots who extract value by inserting
-                  transactions
+                  defends against value extracted by inserting transactions
                 </p>
               </li>
               <li className="flex items-center">
@@ -141,7 +139,7 @@ export default function Home() {
                   <span className="text-[#af292c] font-kake font-semibold">
                     New Pair Snipers :
                   </span>{" "}
-                  Max wallet size of 4.9% stops early aping bots from buying up
+                  Max wallet size of 4.9% stops early sniper bots from buying up
                   the supply of{" "}
                   <a
                     href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
@@ -192,7 +190,7 @@ export default function Home() {
                 href="https://automation.chain.link/"
                 className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
               >
-                fully automated{" "}
+                automated{" "}
               </a>
               smart contract
             </p>
@@ -217,9 +215,12 @@ export default function Home() {
             </p>
             <p className="mt-1">
               Until they #DecentralizeTheSequencer there is{" "}
-              <span className="text-sky-800 font-kake font-semibold">
-                Anti-mev
-              </span>{" "}
+              <a
+                href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
+                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
+              >
+                Anti-MEV
+              </a>
             </p>
           </div>
           <div className="mt-3 flex flex-col items-center justify-center">
