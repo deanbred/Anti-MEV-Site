@@ -9,6 +9,7 @@ module.exports = {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
       kake: ["kake", "italic"],
+      head: ["head", "italic"],
     },
     extend: {},
   },
