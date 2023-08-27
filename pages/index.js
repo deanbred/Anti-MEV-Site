@@ -27,8 +27,8 @@ var style = {
     position: "fixed",
     width: "36px",
     height: "36px",
-    left: "28px",
-    top: "28px",
+    left: "30px",
+    top: "30px",
   },
   bmBurgerBars: {
     background: "#cf4230",
@@ -135,7 +135,7 @@ export default function Home() {
 
         <main id="page-wrap">
           <div className="flex min-h-screen flex-col overflow-hidden bg-contain bg-[url('../public/bg-00.jpeg')]">
-            <div className="p-1 mt-8 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+            <div className="p-1 mt-6 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
@@ -161,7 +161,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-3 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
@@ -221,11 +221,10 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="p-1 mt-6 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <span className=" text-[#af292c]">Anti-whale:</span> Maximum
-                wallet size less than 4.9% prevents whales from manipulating
-                $AntiMEV price
+                wallet size less than 4.9% prevents whales from manipulating token price
               </p>
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 Total supply is Fibonnaci Sequence of{" "}
@@ -234,10 +233,9 @@ export default function Home() {
                   className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
                 >
                   1,123,581,321
-                </a>{" "}
-                tokens{" "}
+                </a>
               </p>
-              <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
+              <p className="text-[#af292c] lg:text-3xl md:text-2xl sm:text-xl text-base">
                 NO TAXES : NO PRE-SALE : NO VC Bags
               </p>
             </div>
