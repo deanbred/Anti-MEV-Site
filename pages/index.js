@@ -200,7 +200,7 @@ export default function Home() {
                   <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                     <span className="text-[#af292c]">Front-Running :</span>{" "}
                     Bribe Detector™ calculates gas fee to expect, and rejects
-                    bots who typically add 20% to get their tx inserted before
+                    bots who add 20% miner bribe to insert their trade before
                     your trade
                   </p>
                 </li>
