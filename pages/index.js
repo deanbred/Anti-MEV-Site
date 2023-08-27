@@ -161,19 +161,6 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="mt-4 m-auto">
-              <button
-                className="p-2 bg-[#cf4230] hover:bg-[#732423] text-stone-200 rounded-2xl"
-                onClick={async () =>
-                  window.open(
-                    "https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
-                  )
-                }
-              >
-                Buy on UniSwap
-              </button>
-            </div>
-
             <div className="p-3 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
@@ -253,6 +240,19 @@ export default function Home() {
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 NO TAXES : NO PRE-SALE : NO VC Bags
               </p>
+            </div>
+
+            <div className="mt-4 m-auto">
+              <button
+                className="p-2 bg-[#cf4230] hover:bg-[#732423] text-stone-200 rounded-2xl"
+                onClick={async () =>
+                  window.open(
+                    "https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
+                  )
+                }
+              >
+                Buy on UniSwap
+              </button>
             </div>
 
             <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
