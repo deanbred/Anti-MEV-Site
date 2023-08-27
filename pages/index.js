@@ -131,8 +131,6 @@ export default function Home() {
           >
             Contract
           </a>
-
-
         </Menu>
 
         <main id="page-wrap">
@@ -221,6 +219,20 @@ export default function Home() {
                   </p>
                 </li>
               </ul>
+            </div>
+
+            <div className="mt-4 max-w-3xl flex m-auto">
+              <Image
+                alt="Performance Chart"
+                src="/eigenphi.png"
+                width={400}
+                height={200}
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
             </div>
 
             <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
