@@ -1,288 +1,227 @@
-import Head from "next/head"
 import Image from "next/image"
 import styles from "@/styles/Home.module.css"
+import Head from "next/head"
 import Header from "@/components/Header"
-import ContractCalls from "@/components/ContractCalls"
 import { SocialIcon } from "react-social-icons"
-import ReactDOM from "react-dom"
+import "lightbox.js-react/dist/index.css"
+import { SlideshowLightbox, initLightboxJS } from "lightbox.js-react"
+import React, { useEffect, Component } from "react"
+import { pushRotate as Menu } from "react-burger-menu"
+
+const images = [
+  { src: "/images/meme00.jpg" },
+  { src: "/images/meme01.jpg" },
+  { src: "/images/meme02.jpg" },
+  { src: "/images/meme03.jpg" },
+  { src: "/images/meme04.jpg" },
+  { src: "/images/meme05.jpg" },
+  { src: "/images/meme06.jpg" },
+  { src: "/images/meme07.jpg" },
+  { src: "/images/meme08.jpg" },
+  { src: "/images/meme09.jpg" },
+  { src: "/images/meme10.jpg" },
+  { src: "/images/meme11.jpg" },
+  { src: "/images/meme12.jpg" },
+  { src: "/images/meme13.jpg" },
+  { src: "/images/meme14.jpg" },
+  { src: "/images/meme15.jpg" },
+  { src: "/images/meme16.jpg" },
+  { src: "/images/meme17.jpg" },
+  { src: "/images/meme18.jpg" },
+  { src: "/images/meme19.jpg" },
+  { src: "/images/meme20.jpg" },
+  { src: "/images/meme21.jpg" },
+  { src: "/images/meme22.jpg" },
+  { src: "/images/meme23.jpg" },
+  { src: "/images/meme24.jpg" },
+  { src: "/images/meme25.jpg" },
+  { src: "/images/meme26.jpg" },
+  { src: "/images/meme27.jpg" },
+  { src: "/images/meme28.jpg" },
+  { src: "/images/meme29.jpg" },
+  { src: "/images/meme30.jpg" },
+  { src: "/images/meme31.jpg" },
+  { src: "/images/meme32.jpg" },
+]
+
+var style = {
+  bmBurgerButton: {
+    position: "fixed",
+    width: "36px",
+    height: "36px",
+    left: "36px",
+    top: "100px",
+  },
+  bmBurgerBars: {
+    background: "#373a47",
+  },
+  bmBurgerBarsHover: {
+    background: "#a90000",
+  },
+  bmCrossButton: {
+    height: "24px",
+    width: "24px",
+  },
+  bmCross: {
+    background: "#bdc3c7",
+  },
+  bmMenuWrap: {
+    position: "fixed",
+    height: "100%",
+  },
+  bmMenu: {
+    background: "#373a47",
+    padding: "2.5em 1.5em 0",
+    fontSize: "1.15em",
+  },
+  bmMorphShape: {
+    fill: "#373a47",
+  },
+  bmItemList: {
+    color: "#b8b7ad",
+    padding: "0.8em",
+  },
+  bmItem: {
+    display: "flex",
+  },
+  bmOverlay: {
+    background: "rgba(0, 0, 0, 0.3)",
+  },
+}
 
 export default function Home() {
+  async function updateUIValues() {}
+
+  useEffect(() => {
+    initLightboxJS("DF8A-D560-5C71-E585", "Individual")
+  }, [])
+
   return (
     <>
       <Head>
-        <title>Anti-MEV Token</title>
+        <title>OnlyFrens</title>
         <meta name="description" content="Crypto Token Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo-00.jpg" />
+        <link rel="icon" href="/logo_large.png" />
       </Head>
       <Header />
-      <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-center bg-[url('../public/bots-01.png')]">
-        <div className="p-4 lg:mr-auto md:mr-auto sm:mr-auto ">
-          <button
-            className="p-2 font-kake font-semibold bg-[#af292c] hover:bg-[#600708] text-stone-200 rounded-2xl"
-            onClick={async () => window.open("https://app.uniswap.org/")}
+
+      <div id="outer-container" className="font-kake font-semibold">
+        <Menu
+          styles={style}
+          left
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
+        >
+          <a
+            id="contract"
+            className="menu-item text-[#69974f] hover:text-[#b16541]"
+            href="https://etherscan.io/token/0x5Cdbd3288740BE2E83D8421a18d163c4eB022966"
           >
-            Buy on Uniswap
-          </button>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="p-3 text-center max-w-4xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
-            <p className="">
-              <a
-                href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
-              >
-                Anti-MEV
-              </a>{" "}
-              is a crypto token that actively{" "}
-              <span className="text-[#af292c] font-kake font-semibold">
-                defends itself
-              </span>{" "}
-              from MEV theft
-            </p>
-            <p className="mt-1">
-              This{" "}
-              <a
-                href="https://cointelegraph.com/learn/what-is-mev-ethereums-invisible-tax"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-              >
-                Invisible tax
-              </a>{" "}
-              is known as{" "}
-              <span className="text-sky-800 font-kake font-semibold">
-                Miner Extractable Value
-              </span>{" "}
-            </p>
-            <p className="mt-1">
-              <a
-                href="https://eigenphi.io/"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-              >
-                MEV bots
-              </a>{" "}
-              have extracted over $1.3 billion from Ethereum users
-            </p>
-            <p className="mt-1">
-              Our token was developed to{" "}
-              <span className="text-[#af292c] font-kake font-semibold">
-                protect users
-              </span>{" "}
-              from undue losses
-            </p>
-          </div>
-          <div className="m-3 flex flex-row items-center justify-center space-x-4">
-            <SocialIcon
-              url="https://twitter.com/Anti_MEV"
-              network="twitter"
-              fgColor="white"
-            />
-            <SocialIcon
-              url="https://discord.gg/rD8cZH8mj"
-              network="discord"
-              fgColor="white"
-            />
-            <SocialIcon url="https://t.me/AntimevPortal" network="telegram" fgColor="white" />
-          </div>
-          <div className="p-3 max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
-            <p className=" text-center">
-              The{" "}
-              <span className="text-sky-800 font-kake font-semibold">
-                MEV Mafia
-              </span>{" "}
-              pollutes our industry and robs profits from legitimate traders
-            </p>
-            <ul className="mt-1 space-y-2">
-              <li className="flex items-center">
-                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p className="ml-3">
-                  {" "}
-                  <span className="text-[#af292c] font-kake font-semibold">
-                    Sandwich Attacks :
-                  </span>{" "}
-                  Our token contract requires blocks to be mined between 2
-                  transfers from 1 wallet - This prevents bots from sandwiching
-                  your trades
-                </p>
-              </li>
-              <li className="flex items-center">
-                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p className="ml-3">
-                  <span className="text-[#af292c] font-kake font-semibold">
-                    Front-Running :
-                  </span>{" "}
-                  Bribe detection code calculates a rolling average of gas to
-                  expect, and rejects bribes from front-running bots - This
-                  defends against value extracted by inserting transactions
-                </p>
-              </li>
-              <li className="flex items-center">
-                <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-800 stroke-2">
-                  <circle cx="12" cy="12" r="11" />
-                  <path
-                    d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                    fill="none"
-                  />
-                </svg>
-                <p className="ml-3">
-                  <span className="text-[#af292c] font-kake font-semibold">
-                    New Pair Snipers :
-                  </span>{" "}
-                  Max wallet size of 4.9% stops early sniper bots from buying up
-                  the supply of{" "}
-                  <a
-                    href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
-                    className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-                  >
-                    1,123,581,321
-                  </a>{" "}
-                  tokens
-                </p>
-              </li>
-            </ul>
-            <p className="mt-2 text-center text-sky-800 font-kake font-semibold">
-              NO TAXES : NO PRE-SALE : NO VC Bags
-            </p>
-          </div>
-          <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
-            <p className="">
-              The transparency of blockchain tech allows us to see these bots
-              attack in real time
-            </p>
-            <p className="mt-1 text-[#af292c] font-kake font-semibold">
-              Now we can stop them!
-            </p>
-            <p className="mt-1 text-center">
-              We carefully maintain a growing list of known MEV attack bots
-            </p>
-            <p className="mt-1 text-center">
-              Notice a new bot?{" "}
-              <a
-                href="mailto:support@antimev.io?subject=New%20MEV%20Bot%20Detected"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
-              >
-                Let us know
-              </a>
-            </p>
-          </div>
-          <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
-            <p className="">
-              Weekly lottery is a{" "}
-              <a
-                href="https://vrf.chain.link/"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-              >
-                verifiably random{" "}
-              </a>
-              and{" "}
-              <a
-                href="https://automation.chain.link/"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-              >
-                automated{" "}
-              </a>
-              smart contract
-            </p>
-            <p className="mt-1">
-              Winners entered for additional{" "}
-              <span className="text-sky-800 font-kake font-semibold">
-                Airdrops
-              </span>{" "}
-            </p>
-            <p className="mt-2 text-sky-800 underline">
-              <span className="text-[#af292c] font-kake font-semibold">
-                MEV is theft... Anti-MEV gives back
-              </span>
-            </p>
-          </div>
-          <div className="p-3 mt-3 text-center max-w-3xl bg-stone-200 opacity-90 md:text-xl sm:text-base rounded-2xl">
-            <p className="">
-              <span className="text-sky-800 font-kake font-semibold">
-                Fair sequencing
-              </span>{" "}
-              is a critical next step to build trust-minimized blockchain tech
-            </p>
-            <p className="mt-1">
-              Until they #DecentralizeTheSequencer there is{" "}
-              <a
-                href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold leading-7"
-              >
-                Anti-MEV
-              </a>
-            </p>
-          </div>
-          <div className="mt-3 flex flex-col items-center justify-center">
-            <ContractCalls className="" />
-          </div>
-          <div className="p-3 mt-3 max-w-3xl bg-stone-200 opacity-90 md:text-base sm:text-base rounded-2xl">
-            <p className="text-center">
-              Built upon secure code from{" "}
-              <a
-                href="https://www.openzeppelin.com/"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-              >
-                Openzeppelin{" "}
-              </a>
-            </p>
-            <p className="text-center">
-              AI generated art from{" "}
-              <a
-                href="https://discord.gg/midjourney"
-                className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
-              >
-                Midjourney{" "}
-              </a>
-            </p>
-            <div className="mt-1 text-base font-semibold">
-              <Image
-                className="mt-3 float-right rounded-md shadow-lg"
-                src="chainlink_badge.jpeg"
-                width={165}
-                height={64}
-                alt="Logo"
-              ></Image>
-              <p className="ml-3">Want a deep dive into Anti-MEV?</p>
-              <p className="ml-3">
-                <a
-                  href="https://github.com/deanbred/Anti-MEV-Token.git"
-                  className="text-sky-800 hover:text-[#af292c] font-kake"
-                >
-                  Read the code
-                </a>
+            Contract
+          </a>
+
+          <a
+            id="chart"
+            className="menu-item text-[#69974f] hover:text-[#b16541]"
+            href="https://dexscreener.com/ethereum/0x5Cdbd3288740BE2E83D8421a18d163c4eB022966"
+          >
+            Live Chart
+          </a>
+
+          <a
+            id="twitter"
+            className="menu-item text-[#69974f] hover:text-[#b16541]"
+            href="https://twitter.com/Only_Frens_"
+          >
+            Twitter
+          </a>
+
+          <a
+            id="tg"
+            className="menu-item text-[#69974f] hover:text-[#b16541]"
+            href="https://t.me/+MkzphdJE1u81YzVh"
+          >
+            Telegram
+          </a>
+        </Menu>
+        <main id="page-wrap">
+          <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-contain bg-[url('../public/5G.jpg')]">
+            <div className="p-3 mt-24 m-auto text-center max-w-3xl font-kake font-semibold bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+              <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
+                The digital currency we didn’t know we needed. $ONLYFRENS is the
+                social currency of crypto, see a FREN, hug a FREN, send them
+                some $ONLYFRENS. See a bad bitch? She’s probably on OnlyFrens.
               </p>
             </div>
+
+            <div className="p-3 mt-4 m-auto text-center max-w-3xl font-kake font-semibold bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+              <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
+                Want some new FRENs, anon? Join the Telegram Group or follow on Twitter!
+              </p>
+            </div>
+
+            <div className="mt-24 m-auto">
+              <div className="p-1 m-2 text-center max-w-3xl font-kake font-semibold bg-stone-200 opacity-80 md:text-base sm:text-base rounded-2xl">
+                <div className="flex flex-row items-center justify-center space-x-6">
+                  <SocialIcon
+                    url="https://twitter.com/Only_Frens_"
+                    network="twitter"
+                    fgColor="white"
+                  />
+                  <SocialIcon
+                    url="https://t.me/+MkzphdJE1u81YzVh"
+                    network="telegram"
+                    fgColor="white"
+                  />
+                </div>
+              </div>
+              <audio className="m-2" id="music" controls autoPlay>
+                <source src="lemon_song.mp3" type="audio/mp3" />
+              </audio>
+            </div>
+
+            <div className="p-1 mx-auto">
+              <SlideshowLightbox
+                className="container grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-3 mx-auto"
+                lightboxIdentifier="lightbox1"
+                framework="next"
+                images={images}
+              >
+                {images.map((image) => (
+                  <Image
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    height={500}
+                    width={300}
+                    data-lightboxjs="lightbox1"
+                    quality={80}
+                  />
+                ))}
+              </SlideshowLightbox>
+            </div>
+
+            <div className="p-3 mt-2 m-auto text-center max-w-3xl font-kake font-semibold bg-stone-200 opacity-70 md:text-base sm:text-base rounded-2xl">
+              <a
+                className=""
+                data-theme="light"
+                href="https://twitter.com/Only_Frens_"
+              >
+                Tweets by
+                <span className="text-[#234afd] hover:text-[#b16541]">
+                  {" "}
+                  @Only_Frens_
+                </span>
+              </a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+              ></script>
+            </div>
           </div>
-          <div className="p-3 mt-3 mb-3 max-w-3xl bg-stone-200 opacity-90 md:text-base sm:text-base rounded-2xl">
-            <a
-              className=""
-              data-theme="light"
-              href="https://twitter.com/Anti_MEV?ref_src=twsrc%5Etfw"
-            >
-              Tweets by @
-              <span className="text-[#af292c] font-kake font-semibold">
-                Anti-MEV
-              </span>
-            </a>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-            ></script>
-          </div>
-        </div>
+        </main>
       </div>
-      <footer className="text-[8px] text-center">1KEOY</footer>
     </>
   )
 }
