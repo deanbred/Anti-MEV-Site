@@ -101,19 +101,11 @@ export default function Home() {
           </a>
 
           <a
-            id="contract"
-            className="menu-item text-[#1b3d3f] hover:text-[#cf4230]"
-            href="https://etherscan.io/token/0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
-          >
-            Contract
-          </a>
-
-          <a
             id="chart"
             className="menu-item text-[#1b3d3f] hover:text-[#cf4230]"
             href="https://dexscreener.com/ethereum/0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
           >
-            Live Chart
+            Chart
           </a>
 
           <a
@@ -131,6 +123,16 @@ export default function Home() {
           >
             Discord
           </a>
+
+          <a
+            id="contract"
+            className="menu-item text-[#1b3d3f] hover:text-[#cf4230]"
+            href="https://etherscan.io/token/0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
+          >
+            Contract
+          </a>
+
+
         </Menu>
 
         <main id="page-wrap">
@@ -224,7 +226,8 @@ export default function Home() {
             <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <span className=" text-[#af292c]">Anti-whale:</span> Maximum
-                wallet size less than 4.9% prevents whales from manipulating token price
+                wallet size less than 4.9% prevents whales from manipulating
+                token price
               </p>
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 Total supply is Fibonacci Sequence of{" "}
