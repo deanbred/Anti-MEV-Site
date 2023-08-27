@@ -227,7 +227,7 @@ export default function Home() {
                 wallet size less than 4.9% prevents whales from manipulating token price
               </p>
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                Total supply is Fibonnaci Sequence of{" "}
+                Total supply is Fibonacci Sequence of{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
                   className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
