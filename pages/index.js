@@ -82,7 +82,7 @@ export default function Home() {
         <title>Anti-MEV</title>
         <meta name="description" content="Anti-MEV Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo2.jpg" />
+        <link rel="icon" href="/shield.png" />
       </Head>
       <Header />
 
