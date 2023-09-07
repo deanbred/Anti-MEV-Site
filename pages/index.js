@@ -9,16 +9,18 @@ import React, { useEffect, Component } from "react"
 import { pushRotate as Menu } from "react-burger-menu"
 
 const images = [
+  { src: "/images/img10.jpg" },
+  { src: "/images/img11.jpg" },
+  { src: "/images/img12.jpg" },
+  { src: "/images/img13.jpg" },
   { src: "/images/img00.jpg" },
   { src: "/images/img01.jpg" },
   { src: "/images/img02.jpg" },
-  { src: "/images/img03.jpg" },
   { src: "/images/img04.jpg" },
-  { src: "/images/img05.jpg" },
   { src: "/images/img06.jpg" },
-  { src: "/images/img07.jpg" },
-  { src: "/images/img08.jpg" },
   { src: "/images/last.jpeg" },
+  { src: "/images/img08.jpg" },
+  { src: "/images/img05.jpg" },
   { src: "/images/img09.png" },
 ]
 
@@ -27,11 +29,11 @@ var style = {
     position: "fixed",
     width: "36px",
     height: "36px",
-    left: "30px",
-    top: "30px",
+    left: "20px",
+    top: "20px",
   },
   bmBurgerBars: {
-    background: "#cf4230",
+    background: "#ea1d24",
   },
   bmBurgerBarsHover: {
     background: "#a90000",
@@ -48,7 +50,7 @@ var style = {
     height: "100%",
   },
   bmMenu: {
-    background: "#a9ba73",
+    background: "#61666b",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },
@@ -94,7 +96,7 @@ export default function Home() {
         >
           <a
             id="tg"
-            className="menu-item text-[#1b3d3f] hover:text-[#cf4230]"
+            className="menu-item text-slate-900 hover:text-[#ea1d24]"
             href="https://t.me/"
           >
             Telegram
@@ -102,15 +104,23 @@ export default function Home() {
 
           <a
             id="chart"
-            className="menu-item text-[#1b3d3f] hover:text-[#cf4230]"
-            href="https://dexscreener.com/ethereum/0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
+            className="menu-item text-slate-900 hover:text-[#ea1d24]"
+            href="https://www.dextools.io/app/en/ether/pair-explorer/0x6ef6666271df490f8c7d5cd18077662456aa292c"
           >
-            Chart
+            DEXTools
+          </a>
+
+          <a
+            id="contract"
+            className="menu-item text-slate-900 hover:text-[#ea1d24]"
+            href="https://etherscan.io/token/0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
+          >
+            Contract
           </a>
 
           <a
             id="twitter"
-            className="menu-item text-[#1b3d3f] hover:text-[#cf4230]"
+            className="menu-item text-slate-900 hover:text-[#ea1d24]"
             href="https://twitter.com/Anti_MEV"
           >
             Twitter
@@ -118,23 +128,23 @@ export default function Home() {
 
           <a
             id="tg"
-            className="menu-item text-[#1b3d3f] hover:text-[#cf4230]"
+            className="menu-item text-slate-900 hover:text-[#ea1d24]"
             href="https://discord.gg/rD8cZH8mj"
           >
             Discord
           </a>
 
           <a
-            id="contract"
-            className="menu-item text-[#1b3d3f] hover:text-[#cf4230]"
-            href="https://etherscan.io/token/0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
+            id="email"
+            className="menu-item text-slate-900 hover:text-[#ea1d24]"
+            href="mailto:support@antimev.io"
           >
-            Contract
+            Email
           </a>
         </Menu>
 
         <main id="page-wrap">
-          <div className="flex min-h-screen flex-col overflow-hidden bg-contain bg-[url('../public/bg-00.jpeg')]">
+          <div className="flex min-h-screen flex-col overflow-hidden bg-contain bg-[url('../public/bg-01.jpg')]">
             <div className="p-1 mt-6 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
@@ -257,7 +267,7 @@ export default function Home() {
 
             <div className="mt-4 m-auto">
               <button
-                className="p-2 bg-[#cf4230] hover:bg-[#732423] text-stone-200 rounded-2xl"
+                className="p-2 bg-[#ea1d24] hover:bg-[#732423] text-stone-200 rounded-2xl"
                 onClick={async () =>
                   window.open(
                     "https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x48b8039cF08E1D1524A68fC6d707D1D7e032e90C"
@@ -289,7 +299,7 @@ export default function Home() {
             </div>
 
             <audio className="mt-4 m-auto" id="music" controls autoPlay>
-              <source src="mickey.mp3" type="audio/mp3" />
+              <source src="" type="audio/mp3" />
             </audio>
 
             <div className="mt-4 p-1 mx-auto">
