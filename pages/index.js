@@ -149,7 +149,7 @@ export default function Home() {
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
-                  className="text-sky-900 hover:text-[#af292c] leading-7"
+                  className="text-sky-900 hover:text-[#ea1d24] leading-7"
                 >
                   Anti-MEV
                 </a>{" "}
@@ -162,7 +162,7 @@ export default function Home() {
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://eigenphi.io/"
-                  className="text-sky-900 hover:text-[#af292c]"
+                  className="text-sky-900 hover:text-[#ea1d24]"
                 >
                   MEV bots
                 </a>{" "}
@@ -175,7 +175,7 @@ export default function Home() {
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
-                  className="text-sky-900 hover:text-[#af292c]"
+                  className="text-sky-900 hover:text-[#ea1d24]"
                 >
                   Our token
                 </a>{" "}
@@ -192,7 +192,7 @@ export default function Home() {
                   </svg>
                   <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                     {" "}
-                    <span className="text-[#af292c]">
+                    <span className="text-[#ea1d24]">
                       Sandwich Attacks :
                     </span>{" "}
                     The code requires 3 blocks be mined between 2 transfers from
@@ -208,7 +208,7 @@ export default function Home() {
                     />
                   </svg>
                   <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                    <span className="text-[#af292c]">Front-Running :</span>{" "}
+                    <span className="text-[#ea1d24]">Front-Running :</span>{" "}
                     Bribe Detector™ calculates gas fee to expect, and rejects
                     bots who add 20% miner bribe to insert their trade before
                     your trade
@@ -223,7 +223,7 @@ export default function Home() {
                     />
                   </svg>
                   <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                    <span className=" text-[#af292c]">Back-Running :</span>{" "}
+                    <span className=" text-[#ea1d24]">Back-Running :</span>{" "}
                     Rolling average gas tracker also effective at fighting bots
                     who use this attack vector
                   </p>
@@ -247,7 +247,7 @@ export default function Home() {
 
             <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                <span className=" text-[#af292c]">Anti-whale:</span> Maximum
+                <span className=" text-[#ea1d24]">Anti-whale:</span> Maximum
                 wallet size less than 4.9% prevents whales from manipulating
                 token price
               </p>
@@ -255,12 +255,12 @@ export default function Home() {
                 Total supply is Fibonacci Sequence of{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
-                  className="text-sky-800 hover:text-[#af292c] font-kake font-semibold"
+                  className="text-sky-800 hover:text-[#ea1d24] font-kake font-semibold"
                 >
                   1,123,581,321
                 </a>
               </p>
-              <p className="text-[#af292c] lg:text-3xl md:text-2xl sm:text-xl text-base">
+              <p className="text-[#ea1d24] lg:text-3xl md:text-2xl sm:text-xl text-base">
                 NO TAXES : NO PRE-SALE : NO VC Bags
               </p>
             </div>
@@ -330,7 +330,7 @@ export default function Home() {
                 href="https://twitter.com/Anti_MEV?ref_src=twsrc%5Etfw"
               >
                 Tweets by
-                <span className="text-[#af292c] hover:text-[#234afd]">
+                <span className="text-[#ea1d24] hover:text-[#234afd]">
                   {" "}
                   @Anti_MEV
                 </span>
