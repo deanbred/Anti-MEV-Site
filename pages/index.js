@@ -145,6 +145,7 @@ export default function Home() {
 
         <main id="page-wrap">
           <div className="flex min-h-screen flex-col overflow-hidden bg-contain bg-[url('../public/bg-01.jpg')]">
+           
             <div className="p-1 mt-6 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
@@ -340,6 +341,7 @@ export default function Home() {
                 src="https://platform.twitter.com/widgets.js"
               ></script>
             </div>
+            
           </div>
         </main>
       </div>
