@@ -97,7 +97,7 @@ export default function Home() {
           <a
             id="tg"
             className="menu-item text-slate-900 hover:text-[#ea1d24]"
-            href="https://t.me/"
+            href="https://t.me/AntimevPortal"
           >
             Telegram
           </a>
@@ -129,7 +129,7 @@ export default function Home() {
           <a
             id="tg"
             className="menu-item text-slate-900 hover:text-[#ea1d24]"
-            href="https://discord.gg/rD8cZH8mj"
+            href="https://discord.gg/nyxcGRJwrg"
           >
             Discord
           </a>
