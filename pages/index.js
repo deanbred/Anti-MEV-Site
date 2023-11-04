@@ -7,6 +7,7 @@ import "lightbox.js-react/dist/index.css"
 import { SlideshowLightbox, initLightboxJS } from "lightbox.js-react"
 import React, { useEffect, Component } from "react"
 import { pushRotate as Menu } from "react-burger-menu"
+import { Card, Col, Row } from "antd"
 
 const images = [
   { src: "/images/img10.jpg" },
@@ -144,9 +145,8 @@ export default function Home() {
         </Menu>
 
         <main id="page-wrap">
-          <div className="flex min-h-screen flex-col overflow-hidden bg-contain bg-[url('../public/bg-01.jpg')]">
-           
-            <div className="p-1 mt-6 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+          <div className="flex min-h-screen flex-col overflow-hidden bg-contain bg-[url('../public/bg-07.jpg')]">
+            <div className="p-1 mt-6 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
@@ -159,7 +159,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-1 mt-48 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://eigenphi.io/"
@@ -172,7 +172,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
@@ -232,6 +232,34 @@ export default function Home() {
               </ul>
             </div>
 
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
+              <Row gutter={16}>
+                <Col span={8}>
+                  <Card title="Sandwich Attacks" className="" bordered={false}>
+                    <div className="text-slate-900 md:text-base sm:text-base">
+                      The code requires 3 blocks be mined between 2 transfers
+                      from 1 wallet
+                    </div>
+                  </Card>
+                </Col>
+                <Col span={8}>
+                  <Card title="Front Running" bordered={false}>
+                    <div className="text-slate-900 md:text-base sm:text-base">
+                      Gas Bribe Detector™ calculates gas fee to expect, and
+                      rejects bots who bribe miners to reorder transactions
+                    </div>
+                  </Card>
+                </Col>
+                <Col span={8}>
+                  <Card title="Back-running" bordered={false}>
+                    <div className="text-slate-900 md:text-base sm:text-base">
+                      Rolling average gas tracker also battles these bots
+                    </div>
+                  </Card>
+                </Col>
+              </Row>
+            </div>
+
             <div className="mt-4 max-w-3xl flex m-auto">
               <Image
                 alt="Performance Chart"
@@ -246,11 +274,10 @@ export default function Home() {
               />
             </div>
 
-            <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <span className=" text-[#ea1d24]">Anti-whale:</span> Maximum
-                wallet size less than 4.9% prevents whales from manipulating
-                token price
+                wallet size of 5% prevents whales from manipulating token price
               </p>
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 Total supply is Fibonacci Sequence of{" "}
@@ -261,7 +288,7 @@ export default function Home() {
                   1,123,581,321
                 </a>
               </p>
-              <p className="text-[#ea1d24] lg:text-3xl md:text-2xl sm:text-xl text-base">
+              <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
                 NO TAXES : NO PRE-SALE : NO VC Bags
               </p>
             </div>
@@ -279,7 +306,7 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="p-1 mt-4 m-auto text-center max-w-3xl bg-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
               <div className="flex flex-row items-center justify-center space-x-6">
                 <SocialIcon
                   url="https://twitter.com/Anti_MEV"
@@ -298,10 +325,6 @@ export default function Home() {
                 />
               </div>
             </div>
-
-            <audio className="mt-4 m-auto" id="music" controls autoPlay>
-              <source src="" type="audio/mp3" />
-            </audio>
 
             <div className="mt-4 p-1 mx-auto">
               <SlideshowLightbox
@@ -324,7 +347,7 @@ export default function Home() {
               </SlideshowLightbox>
             </div>
 
-            <div className="p-3 mt-4 m-auto text-center max-w-3xl bg-stone-200 opacity-70 md:text-base sm:text-base rounded-2xl">
+            <div className="p-3 mt-4 m-auto text-center max-w-3xl text-stone-100 opacity-70 md:text-base sm:text-base rounded-2xl">
               <a
                 className=""
                 data-theme="light"
@@ -341,7 +364,6 @@ export default function Home() {
                 src="https://platform.twitter.com/widgets.js"
               ></script>
             </div>
-            
           </div>
         </main>
       </div>
