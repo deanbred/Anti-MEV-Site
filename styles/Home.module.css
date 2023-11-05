@@ -98,7 +98,6 @@
 
 .card p {
   margin: 0;
-  opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
@@ -253,7 +252,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
+    background: rgb(100,100,100);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 

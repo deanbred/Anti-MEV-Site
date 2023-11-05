@@ -154,8 +154,8 @@ export default function Home() {
                 >
                   Anti-MEV
                 </a>{" "}
-                combines a token and decentalized exchange to defend against all
-                types of Miner Extractable Value on multiple blockchains
+                combines a token and decentralized exchange to defend against
+                Maximal Extractable Value on EVM blockchains
               </p>
             </div>
 
@@ -165,10 +165,9 @@ export default function Home() {
                   href="https://eigenphi.io/"
                   className="text-[#fdfdfd] hover:text-[#fdfdfd] hover:underline leading-7"
                 >
-                  MEV bots
+                  MEV trading bots
                 </a>{" "}
-                steal profits from traders by inserting or reording
-                transactions.
+                steal profits from users by inserting or reording transactions.
               </p>
             </div>
 
@@ -191,42 +190,42 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
-              <Row gutter={16}>
-                <Col span={8}>
+            <div className="flex m-auto mt-4 text-center max-w-4xl text-stone-100 md:text-base sm:text-base">
+              <Row gutter={16} className="">
+                <Col className="ml-auto mr-auto mb-2">
                   <Card
                     className={styles.card}
                     title={<span>Sandwich Attacks</span>}
                     bordered={false}
                   >
-                    <div className="md:text-base sm:text-base">
+                    <p className="md:text-base sm:text-base">
                       The code requires 3 blocks be mined between a buy and
                       sell, preventing bots from sandwiching your trades
-                    </div>
+                    </p>
                   </Card>
                 </Col>
-                <Col span={8}>
+                <Col className="ml-auto mr-auto mb-2">
                   <Card
                     className={styles.card}
                     title={<span>Front-Running</span>}
                     bordered={false}
                   >
-                    <div className="md:text-base sm:text-base">
+                    <p className="md:text-base sm:text-base">
                       Gas Bribe Detector™ calculates gas fee to expect, and
                       rejects bots who bribe miners to reorder transactions
-                    </div>
+                    </p>
                   </Card>
                 </Col>
-                <Col span={8}>
+                <Col className="ml-auto mr-auto mb-2">
                   <Card
                     className={styles.card}
                     title={<span>Back-Running</span>}
                     bordered={false}
                   >
-                    <div className="md:text-base sm:text-base">
+                    <p className="md:text-base sm:text-base">
                       Rolling average gas tracker also battles these bots who
                       use this attack vector
-                    </div>
+                    </p>
                   </Card>
                 </Col>
               </Row>
@@ -268,7 +267,7 @@ export default function Home() {
               />
             </div> */}
 
-            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
+            <div className="p-1 mt-2 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
               <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
                 NO TAXES : NO PRE-SALE : NO VC Bags
               </p>
