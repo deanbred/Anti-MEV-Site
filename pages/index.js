@@ -212,15 +212,37 @@ export default function Home() {
               </Row>
             </div>
 
-            <div className="mt-4 max-w-3xl flex m-auto">
+            <div className="mt-4 max-w-3xl flex m-auto space-x-6">
               <Image
-                alt="Performance Chart"
-                src="/eigenphi.png"
-                width={400}
+                alt="bots1"
+                src="/nanobots.png"
+                width={200}
                 height={200}
                 sizes="100vw"
                 style={{
-                  width: "100%",
+                  width: "33%",
+                  height: "auto",
+                }}
+              />
+              <Image
+                alt="bots2"
+                src="/spider.png"
+                width={200}
+                height={200}
+                sizes="100vw"
+                style={{
+                  width: "33%",
+                  height: "auto",
+                }}
+              />
+              <Image
+                alt="bots2"
+                src="/spider.png"
+                width={200}
+                height={200}
+                sizes="100vw"
+                style={{
+                  width: "33%",
                   height: "auto",
                 }}
               />
