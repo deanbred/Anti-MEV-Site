@@ -69,7 +69,7 @@
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
+  background: rgba(42,42,42, 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
 }
@@ -77,6 +77,7 @@
 .card span {
   display: inline-block;
   transition: transform 200ms;
+  
 }
 
 .card h2 {

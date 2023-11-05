@@ -6,7 +6,7 @@ import { SocialIcon } from "react-social-icons"
 import "lightbox.js-react/dist/index.css"
 import { SlideshowLightbox, initLightboxJS } from "lightbox.js-react"
 import React, { useEffect, Component } from "react"
-import { pushRotate as Menu } from "react-burger-menu"
+import { push as Menu } from "react-burger-menu"
 import { Card, Col, Row } from "antd"
 
 const images = [
@@ -83,7 +83,7 @@ export default function Home() {
         <title>Anti-MEV</title>
         <meta name="description" content="Anti-MEV Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/shield.png" />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <Header />
 
@@ -91,7 +91,7 @@ export default function Home() {
         <Menu
           styles={style}
           left
-          width={"40%"}
+          width={"25%"}
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
         >
@@ -145,17 +145,17 @@ export default function Home() {
         </Menu>
 
         <main id="page-wrap">
-          <div className="flex min-h-screen flex-col overflow-hidden bg-contain bg-[url('../public/bg-07.jpg')]">
+          <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-[url('../public/bg-02.jpg')]">
             <div className="p-1 mt-6 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
-                  className="text-sky-900 hover:text-[#ea1d24] leading-7"
+                  className="text-[#fdfdfd] hover:text-[#fdfdfd] hover:underline leading-7"
                 >
                   Anti-MEV
                 </a>{" "}
-                uses advanced trading bot detection code to prevent MEV bots
-                from stealing your profits!
+                combines a token and decentalized exchange to defend against all
+                types of Miner Extractable Value on multiple blockchains
               </p>
             </div>
 
@@ -163,12 +163,19 @@ export default function Home() {
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://eigenphi.io/"
-                  className="text-sky-900 hover:text-[#ea1d24]"
+                  className="text-[#fdfdfd] hover:text-[#fdfdfd] hover:underline leading-7"
                 >
                   MEV bots
                 </a>{" "}
-                have extracted $1.4 billion from Ethereum users attacking more
-                than 7% of all DEX trades
+                steal profits from traders by inserting or reording
+                transactions.
+              </p>
+            </div>
+
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
+              <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
+                This &quot;invisible tax&quot; affects 7% of all DEX trades and
+                has cost users over $1.5 billion{" "}
               </p>
             </div>
 
@@ -176,46 +183,87 @@ export default function Home() {
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
-                  className="text-sky-900 hover:text-[#ea1d24]"
+                  className="text-[#fdfdfd] hover:text-[#fdfdfd] hover:underline leading-7"
                 >
-                  Anti-MEV
+                  Our token
                 </a>{" "}
-                fights MEV in 3 key ways
+                fights these trading bots in 3 key ways
               </p>
             </div>
 
             <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
               <Row gutter={16}>
                 <Col span={8}>
-                  <Card title="Sandwich Attacks" className="" bordered={false}>
-                    <div className="text-slate-900 md:text-base sm:text-base">
-                      The code requires 3 blocks be mined between 2 transfers
-                      from 1 wallet
+                  <Card
+                    title={
+                      <span
+                        style={{ color: "rgb(234,29,36)", fontSize: "24px" }}
+                      >
+                        Sandwich Attacks
+                      </span>
+                    }
+                    bordered={false}
+                    style={{
+                      color: "rgb(0, 0, 0)",
+                      height: "240px",
+                      backgroundColor: "rgb(69,69,69)",
+                    }}
+                  >
+                    <div className="text-[#fdfdfd] md:text-base sm:text-base">
+                      The code requires 3 blocks be mined between a buy and
+                      sell, preventing bots from sandwiching your trades
                     </div>
                   </Card>
                 </Col>
                 <Col span={8}>
-                  <Card title="Front Running" bordered={false}>
-                    <div className="text-slate-900 md:text-base sm:text-base">
+                  <Card
+                    title={
+                      <span
+                        style={{ color: "rgb(234,29,36)", fontSize: "24px" }}
+                      >
+                        Front-Running
+                      </span>
+                    }
+                    bordered={false}
+                    style={{
+                      height: "240px",
+                      backgroundColor: "rgb(69,69,69)",
+                    }}
+                  >
+                    <div className="text-[#fdfdfd] md:text-base sm:text-base">
                       Gas Bribe Detector™ calculates gas fee to expect, and
                       rejects bots who bribe miners to reorder transactions
                     </div>
                   </Card>
                 </Col>
                 <Col span={8}>
-                  <Card title="Back-running" bordered={false}>
-                    <div className="text-slate-900 md:text-base sm:text-base">
-                      Rolling average gas tracker also battles these bots
+                  <Card
+                    title={
+                      <span
+                        style={{ color: "rgb(234,29,36)", fontSize: "24px" }}
+                      >
+                        Back-Running
+                      </span>
+                    }
+                    bordered={false}
+                    style={{
+                      height: "240px",
+                      backgroundColor: "rgb(69,69,69)",
+                    }}
+                  >
+                    <div className="text-[#fdfdfd] md:text-base sm:text-base">
+                      Rolling average gas tracker also battles these bots who
+                      use this attack vector
                     </div>
                   </Card>
                 </Col>
               </Row>
             </div>
 
-            <div className="mt-4 max-w-3xl flex m-auto space-x-6">
+            {/*             <div className="mt-4 max-w-3xl flex m-auto space-x-6">
               <Image
                 alt="bots1"
-                src="/nanobots.png"
+                src="/bots1.png"
                 width={200}
                 height={200}
                 sizes="100vw"
@@ -226,7 +274,7 @@ export default function Home() {
               />
               <Image
                 alt="bots2"
-                src="/spider.png"
+                src="/bots2.png"
                 width={200}
                 height={200}
                 sizes="100vw"
@@ -236,8 +284,8 @@ export default function Home() {
                 }}
               />
               <Image
-                alt="bots2"
-                src="/spider.png"
+                alt="bots3"
+                src="/bots3.png"
                 width={200}
                 height={200}
                 sizes="100vw"
@@ -246,25 +294,21 @@ export default function Home() {
                   height: "auto",
                 }}
               />
-            </div>
+            </div> */}
 
             <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
-              <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                <span className=" text-[#ea1d24]">Anti-whale:</span> Maximum
-                wallet size of 5% prevents whales from manipulating token price
-              </p>
-              <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                Total supply is Fibonacci Sequence of{" "}
-                <a
-                  href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
-                  className="text-sky-800 hover:text-[#ea1d24] font-kake font-semibold"
-                >
-                  1,123,581,321
-                </a>
-              </p>
               <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
                 NO TAXES : NO PRE-SALE : NO VC Bags
               </p>
+              {/*               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
+                Total supply is Fibonacci Sequence of{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
+                  className="text-[#ea1d24] hover:text-[#ea1d24] hover:underline leading-7"
+                >
+                  1,123,581,321
+                </a>
+              </p> */}
             </div>
 
             <div className="mt-4 m-auto">
@@ -298,6 +342,26 @@ export default function Home() {
                   fgColor="white"
                 />
               </div>
+            </div>
+
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
+              <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
+                AntiMEV DEX is being built to battle MEV bots
+              </p>
+            </div>
+
+            <div className="mt-4 max-w-3xl flex m-auto space-x-6 border">
+              <Image
+                alt="bots1"
+                src="/DEX.png"
+                width={200}
+                height={200}
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
             </div>
 
             <div className="mt-4 p-1 mx-auto">
