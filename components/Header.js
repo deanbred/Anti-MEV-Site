@@ -1,6 +1,3 @@
-/* import { ConnectButton } from "web3uikit"
-import React, { Component } from "react"
-import ReactDOM from "react-dom" */
 import Image from "next/image"
 
 export default function Header() {

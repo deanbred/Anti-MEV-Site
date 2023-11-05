@@ -18,17 +18,13 @@
     "caniuse-lite": "^1.0.30001494",
     "lightbox.js-react": "^0.7.3",
     "magic-sdk": "^17.2.1",
-    "moralis": "^1.8.0",
-    "moralis-v1": "^1.12.0",
     "next": "^13.2.1",
     "react": "18.0.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "18.0.0",
-    "react-moralis": "^1.4.0",
     "react-photo-album": "^2.3.0",
     "react-social-icons": "^5.15.0",
-    "update-browserslist-db": "^1.0.11",
-    "web3uikit": "^1.0.4"
+    "update-browserslist-db": "^1.0.11"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",

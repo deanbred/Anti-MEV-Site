@@ -178,58 +178,10 @@ export default function Home() {
                   href="https://etherscan.io/token/0x48b8039cf08e1d1524a68fc6d707d1d7e032e90c"
                   className="text-sky-900 hover:text-[#ea1d24]"
                 >
-                  Our token
+                  Anti-MEV
                 </a>{" "}
                 fights MEV in 3 key ways
               </p>
-              <ul className="mt-2 space-y-2">
-                <li className="flex items-center">
-                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-900 stroke-2">
-                    <circle cx="12" cy="12" r="11" />
-                    <path
-                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                      fill="none"
-                    />
-                  </svg>
-                  <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                    {" "}
-                    <span className="text-[#ea1d24]">
-                      Sandwich Attacks :
-                    </span>{" "}
-                    The code requires 3 blocks be mined between 2 transfers from
-                    1 wallet
-                  </p>
-                </li>
-                <li className="flex items-center">
-                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-900 stroke-2">
-                    <circle cx="12" cy="12" r="11" />
-                    <path
-                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                      fill="none"
-                    />
-                  </svg>
-                  <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                    <span className="text-[#ea1d24]">Front-Running :</span>{" "}
-                    Bribe Detector™ calculates gas fee to expect, and rejects
-                    bots who add 20% miner bribe to insert their trade before
-                    your trade
-                  </p>
-                </li>
-                <li className="ml-2 flex items-center">
-                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-900 stroke-2">
-                    <circle cx="12" cy="12" r="11" />
-                    <path
-                      d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-                      fill="none"
-                    />
-                  </svg>
-                  <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                    <span className=" text-[#ea1d24]">Back-Running :</span>{" "}
-                    Rolling average gas tracker also effective at fighting bots
-                    who use this attack vector
-                  </p>
-                </li>
-              </ul>
             </div>
 
             <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
