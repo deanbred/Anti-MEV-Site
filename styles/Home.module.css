@@ -103,6 +103,13 @@
   max-width: 30ch;
 }
 
+.sticky-button {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  background-color: white;
+}
+
 .center {
   display: flex;
   justify-content: center;

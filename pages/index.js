@@ -155,7 +155,7 @@ export default function Home() {
                   Anti-MEV
                 </a>{" "}
                 combines a token and decentralized exchange to defend against
-                Maximal Extractable Value on EVM blockchains
+                Maximal Extractable Value on blockchains
               </p>
             </div>
 
@@ -168,13 +168,7 @@ export default function Home() {
                   MEV trading bots
                 </a>{" "}
                 steal profits from users by inserting or reordering transactions
-              </p>
-            </div>
-
-            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
-              <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
-                This &quot;invisible tax&quot; affects 7% of all DEX trades and
-                has cost users over $1.5 billion{" "}
+                in 7% of all DEX trades
               </p>
             </div>
 
@@ -269,7 +263,7 @@ export default function Home() {
 
             <div className="p-1 mt-2 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
               <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
-                NO TAXES : NO PRE-SALE : NO VC Bags
+                NO TAXES : NO PRE-SALE : NO VC BAGGAGE
               </p>
               {/*               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 Total supply is Fibonacci Sequence of{" "}
@@ -327,7 +321,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="mt-4 max-w-3xl flex m-auto space-x-6 border">
+            <div className="mt-4 max-w-3xl flex m-auto border">
               <Image
                 alt="bots1"
                 src="/DEX.png"
