@@ -67,9 +67,9 @@
 }
 
 .card {
-  padding: 0.6rem 1.0rem;
+  padding: 0.6rem 1rem;
   border-radius: var(--border-radius);
-  background : rgb(69,69,69);
+  background: rgb(69, 69, 69);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
   border-radius: 12px;
@@ -79,7 +79,7 @@
   display: inline-block;
   transition: transform 200ms;
   font-size: 1.2rem;
-  color: rgb(234,29,36);
+  color: rgb(234, 29, 36);
 }
 
 .card h2 {
@@ -252,7 +252,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgb(100,100,100);
+    background: rgb(100, 100, 100);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 
@@ -285,7 +285,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .card {
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .card h2 {

@@ -167,7 +167,7 @@ export default function Home() {
                 >
                   MEV trading bots
                 </a>{" "}
-                steal profits from users by inserting or reording transactions.
+                steal profits from users by inserting or reordering transactions
               </p>
             </div>
 
@@ -317,7 +317,13 @@ export default function Home() {
 
             <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
               <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
-                AntiMEV DEX is being built to battle MEV bots
+                Building a DEX from the ground up to battle MEV bots
+              </p>
+              <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
+                Uses 0x API to aggregate liquidity from DeFi sources
+              </p>
+              <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
+                Supports both Limit Orders and Market Swaps
               </p>
             </div>
 
@@ -333,6 +339,15 @@ export default function Home() {
                   height: "auto",
                 }}
               />
+            </div>
+
+            <div className="p-1 mt-4 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base">
+              <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
+                This is not another fork of Uniswap!
+              </p>
+              <p className="text-stone-100 lg:text-3xl md:text-2xl sm:text-xl text-base">
+                Revenue sharing with 70% of swap fees going to holders
+              </p>
             </div>
 
             <div className="mt-4 p-1 mx-auto">
