@@ -91,7 +91,7 @@ export default function Home() {
         <Menu
           styles={style}
           left
-          width={"25%"}
+          width={"35%"}
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
         >

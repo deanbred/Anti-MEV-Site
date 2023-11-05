@@ -6,7 +6,7 @@ export default function Header() {
     <nav className="z-10 font-head font-bold flex flex-row justify-center sticky top-0 bg-gradient-to-r from-[#141515] to-[#020203] border-b-2 overflow-hidden">
       {
         <h2 className="">
-          <Image src="logo7.jpg" width={320} height={100} alt="Logo"></Image>
+          <Image src="logo7.jpg" width={290} height={100} alt="Logo"></Image>
         </h2>
       }
 {/*       <div className={styles.icon}>
