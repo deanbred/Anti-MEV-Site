@@ -67,22 +67,33 @@
 }
 
 .card {
-  padding: 1rem 1.2rem;
+  padding: 0.6rem 1.0rem;
   border-radius: var(--border-radius);
-  background: rgba(42,42,42, 0);
+  background : rgb(69,69,69);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  border-radius: 12px;
 }
 
 .card span {
   display: inline-block;
   transition: transform 200ms;
-  
+  font-size: 1.2rem;
+  color: rgb(234,29,36);
 }
 
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
+}
+
+.card div {
+  margin: 0;
+  opacity: 1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 30ch;
+  color: white;
 }
 
 .card p {

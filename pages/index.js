@@ -195,21 +195,11 @@ export default function Home() {
               <Row gutter={16}>
                 <Col span={8}>
                   <Card
-                    title={
-                      <span
-                        style={{ color: "rgb(234,29,36)", fontSize: "24px" }}
-                      >
-                        Sandwich Attacks
-                      </span>
-                    }
+                    className={styles.card}
+                    title={<span>Sandwich Attacks</span>}
                     bordered={false}
-                    style={{
-                      color: "rgb(0, 0, 0)",
-                      height: "240px",
-                      backgroundColor: "rgb(69,69,69)",
-                    }}
                   >
-                    <div className="text-[#fdfdfd] md:text-base sm:text-base">
+                    <div className="md:text-base sm:text-base">
                       The code requires 3 blocks be mined between a buy and
                       sell, preventing bots from sandwiching your trades
                     </div>
@@ -217,20 +207,11 @@ export default function Home() {
                 </Col>
                 <Col span={8}>
                   <Card
-                    title={
-                      <span
-                        style={{ color: "rgb(234,29,36)", fontSize: "24px" }}
-                      >
-                        Front-Running
-                      </span>
-                    }
+                    className={styles.card}
+                    title={<span>Front-Running</span>}
                     bordered={false}
-                    style={{
-                      height: "240px",
-                      backgroundColor: "rgb(69,69,69)",
-                    }}
                   >
-                    <div className="text-[#fdfdfd] md:text-base sm:text-base">
+                    <div className="md:text-base sm:text-base">
                       Gas Bribe Detector™ calculates gas fee to expect, and
                       rejects bots who bribe miners to reorder transactions
                     </div>
@@ -238,20 +219,11 @@ export default function Home() {
                 </Col>
                 <Col span={8}>
                   <Card
-                    title={
-                      <span
-                        style={{ color: "rgb(234,29,36)", fontSize: "24px" }}
-                      >
-                        Back-Running
-                      </span>
-                    }
+                    className={styles.card}
+                    title={<span>Back-Running</span>}
                     bordered={false}
-                    style={{
-                      height: "240px",
-                      backgroundColor: "rgb(69,69,69)",
-                    }}
                   >
-                    <div className="text-[#fdfdfd] md:text-base sm:text-base">
+                    <div className="md:text-base sm:text-base">
                       Rolling average gas tracker also battles these bots who
                       use this attack vector
                     </div>
