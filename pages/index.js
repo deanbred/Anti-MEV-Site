@@ -145,7 +145,7 @@ export default function Home() {
         </Menu>
 
         <main id="page-wrap">
-          <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-cover bg-[url('../public/bg-02.jpg')]">
+          <div className="flex min-h-screen flex-col overflow-hidden bg-no-repeat bg-contain bg-black bg-[url('../public/bg-02.jpg')]">
             <div className="p-1 mt-6 m-auto text-center max-w-3xl text-stone-100 md:text-base sm:text-base rounded-2xl">
               <p className="lg:text-3xl md:text-2xl sm:text-xl text-base">
                 <a
